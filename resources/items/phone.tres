@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemDefinition" load_steps=2 format=3]
+[ext_resource type="Script" path="res://core/items/item_definition.gd" id="1"]
+[resource]
+script = ExtResource("1")
+id = &"phone"
+display_name = "ITEM_PHONE"
+description_key = &"ITEM_PHONE_DESC"
+weight_kg = 0.2
+inventory_shape = Array[Vector2i]([Vector2i(0, 0), Vector2i(0, 1)])
+tags = Array[StringName]([&"electronics", &"keepsake"])
+equip_slot = &"secondary_hand"
+use_action = &"phone"
+frontrooms_keepsake = true
+world_visual_fallback = &"phone"
+color = Color(0.08, 0.09, 0.1, 1)
+charge_capacity = 100.0
+initial_charge = 100.0
+world_size = Vector3(0.08, 0.16, 0.012)

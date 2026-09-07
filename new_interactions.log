@@ -1,0 +1,61 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2582)
+PASS: field UI fixture creates inventory items
+PASS: field UI fixture equips bag
+PASS: field UI fixture equips hand item
+PASS: field UI fixture places rotatable item
+PASS: field grid has usable live geometry
+PASS: equipment sidebar is the default pane
+PASS: ten equipment slots form one vertical column
+PASS: equipment row uses restrained text and actual item thumbnail without a body icon
+PASS: opening inventory starts without selection or held item
+PASS: short click selects without holding or changing the model
+PASS: short click selection swaps sidebar to details
+PASS: details exposes the selected item's real thumbnail button
+ERROR: FAIL: thumbnail long press releases through the real grid placement path
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/test_field_inventory_ui.gd:254)
+       [1] _run (res://tests/test_field_inventory_ui.gd:48)
+       [2] _frames (res://tests/test_field_inventory_ui.gd:236)
+ERROR: FAIL: thumbnail short click cancels selection without a placement transaction
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/test_field_inventory_ui.gd:254)
+       [1] _run (res://tests/test_field_inventory_ui.gd:52)
+       [2] _frames (res://tests/test_field_inventory_ui.gd:236)
+PASS: close remains visible at 960x540
+PASS: single scrolling sidebar remains inside 960x540
+PASS: bag surface remains usable at 960x540
+PASS: close remains visible at 1280x720
+PASS: single scrolling sidebar remains inside 1280x720
+PASS: bag surface remains usable at 1280x720
+PASS: close remains visible at 1920x1080
+PASS: single scrolling sidebar remains inside 1920x1080
+PASS: bag surface remains usable at 1920x1080
+ERROR: FAIL: real mouse drag and physical R commit through inherited transaction wiring
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/test_field_inventory_ui.gd:254)
+       [1] _run (res://tests/test_field_inventory_ui.gd:73)
+       [2] _frames (res://tests/test_field_inventory_ui.gd:236)
+PASS: long press drags equipped item into the bag grid
+ERROR: FAIL: item can be selected before reopening
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/test_field_inventory_ui.gd:254)
+       [1] _run (res://tests/test_field_inventory_ui.gd:85)
+       [2] _mouse_click (res://tests/test_field_inventory_ui.gd:186)
+       [3] _mouse_button (res://tests/test_field_inventory_ui.gd:201)
+       [4] _frames (res://tests/test_field_inventory_ui.gd:236)
+ERROR: FAIL: selected thumbnail starts drag only after the long-press threshold
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] _check (res://tests/test_field_inventory_ui.gd:254)
+       [1] _run (res://tests/test_field_inventory_ui.gd:89)
+PASS: hiding during a thumbnail hold cancels all interaction state
+PASS: real hide and show clears selection and restores equipment
+PASS: fixed close button receives a real mouse click
+FIELD_INV_UI_RESULT: 30 checks, 5 failures

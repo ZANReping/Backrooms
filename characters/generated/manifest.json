@@ -1,0 +1,8 @@
+{
+  "source": "assets\\third_party\\characters\\gd_human_delta_v1\\candidate_human.glb",
+  "source_sha256": "374a21c5082e0b06186698917dc4fc79a222c04f1ab627e6adcc37901872ff04",
+  "output_sha256": "f63868eddf6a2a0e7eb2d34c118ee76452b9e114402cad0b9d57c5db31969601",
+  "transform": "Zero face target deltas below source-local y=1.435 m; add COLOR_0.R body-region labels for clothing/first-person masking and COLOR_0.G right forearm/hand coverage (source x < -0.34 m) for the held-phone rig; preserve base positions, Skin, skeleton, UV, body and clothing targets.",
+  "normalized_target_count": 115,
+  "license": "Derived from pinned GD-Human evaluation candidate; source license/provenance caveat applies."
+}

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="PrologueConfig" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://resources/prologue/prologue_config.gd" id="1_config"]
+
+[resource]
+script = ExtResource("1_config")
+story_date = {"day": 18, "month": 10, "year": 2026}
+opening_seconds = 28080.0
+apartment_route = &"prologue_apartment"
+commute_route = &"prologue_commute"
+arrival_route = &"level0_arrival"
+water_price = 3

@@ -1,0 +1,58 @@
+﻿{
+    "schema":  1,
+    "id":  "dirty_carpet",
+    "name":  "Dirty Carpet",
+    "kind":  "texture",
+    "status":  "DOWNLOADED_UNVERIFIED",
+    "source_page":  "https://polyhaven.com/a/dirty_carpet",
+    "api_files":  "https://api.polyhaven.com/files/dirty_carpet",
+    "authors":  {
+                    "name":  "Rohit Seervi",
+                    "role":  "All"
+                },
+    "published_utc":  "2023-11-07",
+    "retrieved_utc":  "2026-09-07",
+    "license":  "CC0 1.0 Universal",
+    "license_url":  "https://polyhaven.com/license",
+    "attribution_required":  false,
+    "maps":  {
+                 "color":  {
+                               "api_key":  "Diffuse",
+                               "resolution":  "2k",
+                               "format":  "jpg"
+                           },
+                 "normal":  {
+                                "api_key":  "nor_gl",
+                                "resolution":  "1k",
+                                "format":  "jpg"
+                            },
+                 "packed_arm":  {
+                                    "api_key":  "arm",
+                                    "resolution":  "1k",
+                                    "format":  "jpg"
+                                }
+             },
+    "files":  [
+                  {
+                      "path":  "assets/third_party/polyhaven/textures/dirty_carpet/dirty_carpet_diff_2k.jpg",
+                      "url":  "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/dirty_carpet/dirty_carpet_diff_2k.jpg",
+                      "bytes":  3818108,
+                      "api_md5":  "d2f1c8d121996a8f46c8da89968ed95c",
+                      "sha256":  "6337d3ef1a11ca8bea2d31b86da15a65f10ae92c7f3345fae62924bae194f6c0"
+                  },
+                  {
+                      "path":  "assets/third_party/polyhaven/textures/dirty_carpet/dirty_carpet_nor_gl_1k.jpg",
+                      "url":  "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/dirty_carpet/dirty_carpet_nor_gl_1k.jpg",
+                      "bytes":  1089297,
+                      "api_md5":  "f6835454628831b0d8feceba6202e7a1",
+                      "sha256":  "ba96f6f098ac64456f4cc310469200ff702596a9070d2553f990da8f7b86d29f"
+                  },
+                  {
+                      "path":  "assets/third_party/polyhaven/textures/dirty_carpet/dirty_carpet_arm_1k.jpg",
+                      "url":  "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/dirty_carpet/dirty_carpet_arm_1k.jpg",
+                      "bytes":  1054681,
+                      "api_md5":  "fbe1d0c316caca13fccb36a92b5a0f75",
+                      "sha256":  "c7d89d591dcc3691d28cec7eddb3a75126a1e0a49e9808b521c7c33450f9e50e"
+                  }
+              ]
+}

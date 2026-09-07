@@ -1,0 +1,22 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/third_party/polyhaven/textures/brown_leather/brown_leather_albedo_1k.jpg" id="1_jbwfy"]
+[ext_resource type="Texture2D" path="res://assets/third_party/polyhaven/textures/brown_leather/brown_leather_arm_1k.jpg" id="2_xyv67"]
+[ext_resource type="Texture2D" path="res://assets/third_party/polyhaven/textures/brown_leather/brown_leather_nor_gl_1k.jpg" id="3_bdyw8"]
+
+[resource]
+resource_name = "leather"
+albedo_color = Color(0.47058824, 0.33333334, 0.26666668, 1)
+albedo_texture = ExtResource("1_jbwfy")
+metallic_texture = ExtResource("2_xyv67")
+metallic_texture_channel = 2
+roughness = 0.58
+roughness_texture = ExtResource("2_xyv67")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_scale = 0.7
+normal_texture = ExtResource("3_bdyw8")
+ao_enabled = true
+ao_texture = ExtResource("2_xyv67")
+uv1_scale = Vector3(5, 5, 5)
+uv1_triplanar = true

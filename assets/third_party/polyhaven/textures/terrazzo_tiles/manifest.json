@@ -1,0 +1,58 @@
+﻿{
+    "schema":  1,
+    "id":  "terrazzo_tiles",
+    "name":  "Terrazzo Tiles",
+    "kind":  "texture",
+    "status":  "DOWNLOADED_UNVERIFIED",
+    "source_page":  "https://polyhaven.com/a/terrazzo_tiles",
+    "api_files":  "https://api.polyhaven.com/files/terrazzo_tiles",
+    "authors":  {
+                    "name":  "Amal Kumar",
+                    "role":  "All"
+                },
+    "published_utc":  "2025-05-06",
+    "retrieved_utc":  "2026-09-07",
+    "license":  "CC0 1.0 Universal",
+    "license_url":  "https://polyhaven.com/license",
+    "attribution_required":  false,
+    "maps":  {
+                 "color":  {
+                               "api_key":  "Diffuse",
+                               "resolution":  "2k",
+                               "format":  "jpg"
+                           },
+                 "normal":  {
+                                "api_key":  "nor_gl",
+                                "resolution":  "1k",
+                                "format":  "jpg"
+                            },
+                 "packed_arm":  {
+                                    "api_key":  "arm",
+                                    "resolution":  "1k",
+                                    "format":  "jpg"
+                                }
+             },
+    "files":  [
+                  {
+                      "path":  "assets/third_party/polyhaven/textures/terrazzo_tiles/terrazzo_tiles_diff_2k.jpg",
+                      "url":  "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/terrazzo_tiles/terrazzo_tiles_diff_2k.jpg",
+                      "bytes":  4554044,
+                      "api_md5":  "b4bfb01525c22e611d9a0651f372ae91",
+                      "sha256":  "26cc390c19e468de03fc9699198398590a7adc1ddd4972e6d6fb65d76403bb66"
+                  },
+                  {
+                      "path":  "assets/third_party/polyhaven/textures/terrazzo_tiles/terrazzo_tiles_nor_gl_1k.jpg",
+                      "url":  "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/terrazzo_tiles/terrazzo_tiles_nor_gl_1k.jpg",
+                      "bytes":  77954,
+                      "api_md5":  "a5f6d05f27db4151227535bdbc82c048",
+                      "sha256":  "56bbe2d960b47ddb2dc538be2953a1ad07083b017cdada1cdc7958421a6cfcd9"
+                  },
+                  {
+                      "path":  "assets/third_party/polyhaven/textures/terrazzo_tiles/terrazzo_tiles_arm_1k.jpg",
+                      "url":  "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/terrazzo_tiles/terrazzo_tiles_arm_1k.jpg",
+                      "bytes":  477964,
+                      "api_md5":  "843e281304070827482b94ed7da24bc4",
+                      "sha256":  "f6bc98a79c33010b54759c5dba5f915179a74b78d46f7b0d03ecf4feb6347c0e"
+                  }
+              ]
+}

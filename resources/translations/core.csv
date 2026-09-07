@@ -1,0 +1,37 @@
+keys,zh_CN,en
+ROOM_A,基础系统测试室 A,Foundation lab A
+ROOM_B,基础系统测试室 B,Foundation lab B
+ROOM_TABLE_HINT,拾取 · 装备 · 旋转 · 丢弃,Pick up · Equip · Rotate · Drop
+ROOM_DOOR_HINT,场景切换测试,Scene transition
+ROOM_CROUCH_HINT,低梁：按住 Ctrl 蹲伏,Low beam: hold Ctrl
+INTERACT_EXAMINE,E · 检查,E · Examine
+INTERACT_TRAVEL,E · 前往另一测试室,E · Travel to other room
+INTERACT_PICKUP,E · 拾取 %s,E · Pick up %s
+NOTICE_EXAMINED,已检查物体。,Object examined.
+NOTICE_PICKED_UP,已拾取，Tab 查看背包。,Picked up. Tab opens inventory.
+NOTICE_NO_USE,这件物品没有可用动作。,This item has no use action.
+NOTICE_EMPTY,瓶子已空，仍可保留。,The bottle is empty and can be kept.
+NOTICE_DRANK,喝了一口水，瓶子仍在。,You took a sip. The bottle remains.
+NOTICE_NO_CHARGE,电量不足。,Not enough charge.
+NOTICE_NO_PHONE,你没有携带手机。,You are not carrying a phone.
+NOTICE_SAVED,已保存测试进度。,Test progress saved.
+NOTICE_BACKUP,主存档不可用，已读取备份。,Primary save unavailable. Backup loaded.
+ERR_ITEM,物品数据无效或实例数量达到上限。,Invalid item or instance limit reached.
+ERR_NO_CONTAINER,没有可用的背包容器。,No backpack container available.
+ERR_NO_SPACE,放不下：检查占格、阻塞格和内层容器的展开体积。,No space. Check occupied cells and expanded nested containers.
+ERR_SLOT,此物品不能装备到该槽位。,This item cannot use that equipment slot.
+ERR_SLOT_OCCUPIED,请先卸下该槽位的物品。,Unequip that slot first.
+ERR_ROTATION,此物品不能这样旋转。,This rotation is not allowed.
+ERR_DUPLICATE,一件物品只能出现在一个位置。,An item may occupy only one location.
+ERR_CYCLE,不能循环嵌套容器或超过深度限制。,Container cycle or depth limit rejected.
+ERR_TAG,此容器不接收该类物品。,This container does not accept that item type.
+ERR_ROUTE,目标场景或入口不可用，保留当前位置。,Destination or entrance unavailable. Current room preserved.
+ERR_MANUAL_SAVE,该难度仅允许自动保存。,This difficulty only permits automatic saves.
+ERR_UNSAFE_SAVE,请先站到可安全保存的位置。,Stand in a safe place before saving.
+ERR_SAVE,保存失败，当前进度仍保留在内存中。,Save failed. Current session remains in memory.
+ERR_LOAD,没有有效存档，当前会话未改变。,No valid save. Current session was not changed.
+DESCRIPTION_EMPTY,空容器，仍可重新装填。,Empty container. It can be refilled.
+DESCRIPTION_UNCHARGED,目前没有电量。,Currently out of charge.
+DEATH_HEALTH_DEPLETED,生命值耗尽,Health depleted
+CONTROLS_HINT,WASD 移动 · Shift 冲刺 · Ctrl 蹲伏 · 空格 跳跃 · E 交互 · Tab 背包 · P 手机 · Q 副手 · 右键 主手 · Esc 暂停,WASD Move · Shift Sprint · Ctrl Crouch · Space Jump · E Interact · Tab Inventory · P Phone · Q Offhand · RMB Use · Esc Pause
+LOADING,正在切换场景……,Loading scene…

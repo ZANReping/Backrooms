@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="ItemDefinition" format=3]
+
+[ext_resource type="Script" path="res://core/items/item_description_rule.gd" id="1_s70oj"]
+[ext_resource type="Texture2D" path="res://assets/prologue/icons/laptop.png" id="2_46cfl"]
+[ext_resource type="Script" path="res://core/items/item_definition.gd" id="3_r41ic"]
+[ext_resource type="PackedScene" path="res://art/prologue/props/laptop.tscn" id="4_hjalc"]
+
+[sub_resource type="Resource" id="Resource_foef8"]
+script = ExtResource("1_s70oj")
+required_world_flag = &"laptop_frontrooms"
+text_key = &"PRO_LAPTOP_FRONTROOMS"
+
+[sub_resource type="Resource" id="Resource_xy2x8"]
+script = ExtResource("1_s70oj")
+required_world_flag = &"laptop_arrived"
+text_key = &"PRO_LAPTOP_ARRIVED"
+
+[sub_resource type="Resource" id="Resource_v0pwn"]
+script = ExtResource("1_s70oj")
+required_world_flag = &"laptop_survived"
+text_key = &"PRO_LAPTOP_SURVIVED"
+
+[resource]
+script = ExtResource("3_r41ic")
+id = &"work_laptop"
+display_name = "PRO_ITEM_WORK_LAPTOP"
+description_key = &"PRO_ITEM_WORK_LAPTOP_DESC"
+description_rules = Array[ExtResource("1_s70oj")]([SubResource("Resource_foef8"), SubResource("Resource_xy2x8"), SubResource("Resource_v0pwn")])
+icon = ExtResource("2_46cfl")
+world_scene = ExtResource("4_hjalc")
+weight_kg = 2.7
+inventory_shape = Array[Vector2i]([Vector2i(0, 0), Vector2i(1, 0), Vector2i(2, 0), Vector2i(3, 0), Vector2i(0, 1), Vector2i(1, 1), Vector2i(2, 1), Vector2i(3, 1), Vector2i(0, 2), Vector2i(1, 2), Vector2i(2, 2), Vector2i(3, 2)])
+frontrooms_keepsake = true
+world_size = Vector3(0.36, 0.022, 0.25)

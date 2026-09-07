@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemDefinition" format=3]
+
+[ext_resource type="Script" path="res://core/items/item_description_rule.gd" id="1_25b2s"]
+[ext_resource type="Script" path="res://core/items/item_definition.gd" id="2_pnoys"]
+
+[resource]
+script = ExtResource("2_pnoys")
+id = &"l_tool"
+display_name = "ITEM_L_TOOL"
+description_key = &"ITEM_L_TOOL_DESC"
+weight_kg = 0.7
+inventory_shape = Array[Vector2i]([Vector2i(0, 0), Vector2i(0, 1), Vector2i(1, 1)])
+tags = Array[StringName]([&"tool"])
+world_visual_fallback = &"tool"
+color = Color(0.58, 0.46, 0.2, 1)
+world_size = Vector3(0.28, 0.08, 0.18)

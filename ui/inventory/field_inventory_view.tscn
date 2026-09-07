@@ -1,0 +1,212 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://ui/inventory/field_inventory_view.gd" id="1"]
+[ext_resource type="Script" path="res://ui/inventory/field_inventory_grid.gd" id="2"]
+[ext_resource type="Theme" path="res://ui/inventory/field_inventory_theme.tres" id="3"]
+
+[node name="FieldInventoryView" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme = ExtResource("3")
+script = ExtResource("1")
+
+[node name="Backdrop" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.035, 0.041, 0.043, 0.52)
+mouse_filter = 2
+
+[node name="Margin" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 28.0
+offset_top = 22.0
+offset_right = -28.0
+offset_bottom = -22.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Root" type="VBoxContainer" parent="Margin"]
+layout_mode = 2
+theme_override_constants/separation = 18
+
+[node name="Header" type="HBoxContainer" parent="Margin/Root"]
+layout_mode = 2
+theme_override_constants/separation = 20
+[node name="Title" type="Label" parent="Margin/Root/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 23
+text = "INVENTORY_TITLE"
+[node name="WeightLabel" type="Label" parent="Margin/Root/Header"]
+unique_name_in_owner = true
+layout_mode = 2
+vertical_alignment = 1
+theme_type_variation = &"InventoryMeta"
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.7)
+theme_override_constants/shadow_offset_y = 1
+text = "INVENTORY_WEIGHT"
+[node name="CloseButton" type="Button" parent="Margin/Root/Header"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(88, 42)
+layout_mode = 2
+text = "INVENTORY_CLOSE"
+
+[node name="Body" type="HBoxContainer" parent="Margin/Root"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 14
+
+[node name="Sidebar" type="PanelContainer" parent="Margin/Root/Body"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(306, 0)
+layout_mode = 2
+theme_type_variation = &"SidePanel"
+[node name="SidebarStack" type="VBoxContainer" parent="Margin/Root/Body/Sidebar"]
+layout_mode = 2
+[node name="EquipmentPane" type="VBoxContainer" parent="Margin/Root/Body/Sidebar/SidebarStack"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 8
+[node name="EquipmentTitle" type="Label" parent="Margin/Root/Body/Sidebar/SidebarStack/EquipmentPane"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "INVENTORY_EQUIPMENT"
+[node name="EquipmentScroll" type="ScrollContainer" parent="Margin/Root/Body/Sidebar/SidebarStack/EquipmentPane"]
+custom_minimum_size = Vector2(0, 250)
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+[node name="EquipmentGrid" type="GridContainer" parent="Margin/Root/Body/Sidebar/SidebarStack/EquipmentPane/EquipmentScroll"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+columns = 1
+theme_override_constants/v_separation = 4
+
+[node name="Details" type="PanelContainer" parent="Margin/Root/Body/Sidebar/SidebarStack"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+theme_type_variation = &"DetailsPanel"
+[node name="DetailScroll" type="ScrollContainer" parent="Margin/Root/Body/Sidebar/SidebarStack/Details"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+[node name="DetailsContent" type="VBoxContainer" parent="Margin/Root/Body/Sidebar/SidebarStack/Details/DetailScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 9
+[node name="DetailTop" type="HBoxContainer" parent="Margin/Root/Body/Sidebar/SidebarStack/Details/DetailScroll/DetailsContent"]
+layout_mode = 2
+[node name="DetailHeading" type="Label" parent="Margin/Root/Body/Sidebar/SidebarStack/Details/DetailScroll/DetailsContent/DetailTop"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"InventorySecondary"
+text = "INVENTORY_DETAILS"
+[node name="ShowEquipmentButton" type="Button" parent="Margin/Root/Body/Sidebar/SidebarStack/Details/DetailScroll/DetailsContent/DetailTop"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(92, 40)
+layout_mode = 2
+text = "INVENTORY_SHOW_EQUIPMENT"
+[node name="DetailName" type="Label" parent="Margin/Root/Body/Sidebar/SidebarStack/Details/DetailScroll/DetailsContent"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+autowrap_mode = 2
+[node name="DetailDescription" type="Label" parent="Margin/Root/Body/Sidebar/SidebarStack/Details/DetailScroll/DetailsContent"]
+unique_name_in_owner = true
+layout_mode = 2
+autowrap_mode = 2
+theme_override_colors/font_color = Color(0.78, 0.84, 0.81, 1)
+theme_override_constants/line_spacing = 3
+[node name="DetailStatus" type="Label" parent="Margin/Root/Body/Sidebar/SidebarStack/Details/DetailScroll/DetailsContent"]
+unique_name_in_owner = true
+layout_mode = 2
+autowrap_mode = 2
+theme_type_variation = &"InventoryMeta"
+[node name="ActionHint" type="Label" parent="Margin/Root/Body/Sidebar/SidebarStack/Details/DetailScroll/DetailsContent"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"InventorySecondary"
+autowrap_mode = 2
+[node name="EquipTarget" type="OptionButton" parent="Margin/Root/Body/Sidebar/SidebarStack/Details/DetailScroll/DetailsContent"]
+unique_name_in_owner = true
+layout_mode = 2
+[node name="Actions" type="GridContainer" parent="Margin/Root/Body/Sidebar/SidebarStack/Details/DetailScroll/DetailsContent"]
+layout_mode = 2
+columns = 2
+theme_override_constants/h_separation = 8
+theme_override_constants/v_separation = 6
+[node name="EquipButton" type="Button" parent="Margin/Root/Body/Sidebar/SidebarStack/Details/DetailScroll/DetailsContent/Actions"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "INVENTORY_EQUIP"
+[node name="OpenButton" type="Button" parent="Margin/Root/Body/Sidebar/SidebarStack/Details/DetailScroll/DetailsContent/Actions"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "INVENTORY_OPEN"
+[node name="UseButton" type="Button" parent="Margin/Root/Body/Sidebar/SidebarStack/Details/DetailScroll/DetailsContent/Actions"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "INVENTORY_USE"
+[node name="DropButton" type="Button" parent="Margin/Root/Body/Sidebar/SidebarStack/Details/DetailScroll/DetailsContent/Actions"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "INVENTORY_DROP"
+
+[node name="Main" type="VBoxContainer" parent="Margin/Root/Body"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 12
+[node name="ContainerBar" type="HBoxContainer" parent="Margin/Root/Body/Main"]
+layout_mode = 2
+[node name="BackButton" type="Button" parent="Margin/Root/Body/Main/ContainerBar"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(78, 34)
+layout_mode = 2
+text = "INVENTORY_BACK"
+[node name="ContainerTitle" type="Label" parent="Margin/Root/Body/Main/ContainerBar"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 21
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.65)
+theme_override_constants/shadow_offset_y = 1
+[node name="Breadcrumb" type="Label" parent="Margin/Root/Body/Main"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"InventorySecondary"
+text_overrun_behavior = 3
+[node name="GridLayer" type="PanelContainer" parent="Margin/Root/Body/Main"]
+custom_minimum_size = Vector2(420, 260)
+layout_mode = 2
+size_flags_vertical = 3
+theme_type_variation = &"GridSurface"
+[node name="InventoryGrid" type="Control" parent="Margin/Root/Body/Main/GridLayer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2")
+[node name="EmptyContainer" type="Label" parent="Margin/Root/Body/Main/GridLayer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "INVENTORY_NO_CONTAINER"
+horizontal_alignment = 1
+vertical_alignment = 1

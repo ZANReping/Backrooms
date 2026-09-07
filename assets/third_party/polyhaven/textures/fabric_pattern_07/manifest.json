@@ -1,0 +1,58 @@
+﻿{
+    "schema":  1,
+    "id":  "fabric_pattern_07",
+    "name":  "Fabric Pattern 07",
+    "kind":  "texture",
+    "status":  "DOWNLOADED_UNVERIFIED",
+    "source_page":  "https://polyhaven.com/a/fabric_pattern_07",
+    "api_files":  "https://api.polyhaven.com/files/fabric_pattern_07",
+    "authors":  {
+                    "name":  "Rob Tuytel",
+                    "role":  "All"
+                },
+    "published_utc":  "2020-05-29",
+    "retrieved_utc":  "2026-09-07",
+    "license":  "CC0 1.0 Universal",
+    "license_url":  "https://polyhaven.com/license",
+    "attribution_required":  false,
+    "maps":  {
+                 "color":  {
+                               "api_key":  "col_1",
+                               "resolution":  "1k",
+                               "format":  "jpg"
+                           },
+                 "normal":  {
+                                "api_key":  "nor_gl",
+                                "resolution":  "1k",
+                                "format":  "jpg"
+                            },
+                 "packed_arm":  {
+                                    "api_key":  "arm",
+                                    "resolution":  "1k",
+                                    "format":  "jpg"
+                                }
+             },
+    "files":  [
+                  {
+                      "path":  "assets/third_party/polyhaven/textures/fabric_pattern_07/fabric_pattern_07_col_1_1k.jpg",
+                      "url":  "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/fabric_pattern_07/fabric_pattern_07_col_1_1k.jpg",
+                      "bytes":  788593,
+                      "api_md5":  "c82406b5ac4086b14db6b3ad9c84946f",
+                      "sha256":  "aeb7a1487b77aec55e39de662def4d371f5c7c617f62d1f291d7f9932ffebdc9"
+                  },
+                  {
+                      "path":  "assets/third_party/polyhaven/textures/fabric_pattern_07/fabric_pattern_07_nor_gl_1k.jpg",
+                      "url":  "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/fabric_pattern_07/fabric_pattern_07_nor_gl_1k.jpg",
+                      "bytes":  828071,
+                      "api_md5":  "cdbbc2ebe5d75f6edd66ba090f3be49f",
+                      "sha256":  "f6955bbdead9f023f2357f6f8808ed49627d10882cd2a3cb6b5a5ace155abc45"
+                  },
+                  {
+                      "path":  "assets/third_party/polyhaven/textures/fabric_pattern_07/fabric_pattern_07_arm_1k.jpg",
+                      "url":  "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/fabric_pattern_07/fabric_pattern_07_arm_1k.jpg",
+                      "bytes":  227059,
+                      "api_md5":  "5e2e8b55e3738de5fd60b64e0da87ff3",
+                      "sha256":  "57520f1383a41ea9d69a3f9c1d2a2b0cdc6ba85c579935c44a1281845ec11030"
+                  }
+              ]
+}

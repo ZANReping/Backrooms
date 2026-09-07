@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://dvk5j00m02mbu"
+
+[deps]
+
+files=["res://resources/translations/prologue_shell.zh_CN.translation", "res://resources/translations/prologue_shell.en.translation"]
+
+source_file="res://resources/translations/prologue_shell.csv"
+dest_files=["res://resources/translations/prologue_shell.zh_CN.translation", "res://resources/translations/prologue_shell.en.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

@@ -1,0 +1,22 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/third_party/polyhaven/textures/fabric_pattern_07/fabric_pattern_07_col_1_1k.jpg" id="1_niv78"]
+[ext_resource type="Texture2D" path="res://assets/third_party/polyhaven/textures/fabric_pattern_07/fabric_pattern_07_arm_1k.jpg" id="2_7qsfh"]
+[ext_resource type="Texture2D" path="res://assets/third_party/polyhaven/textures/fabric_pattern_07/fabric_pattern_07_nor_gl_1k.jpg" id="3_ch5yp"]
+
+[resource]
+resource_name = "canvas"
+albedo_color = Color(0.3372549, 0.3137255, 0.2901961, 1)
+albedo_texture = ExtResource("1_niv78")
+metallic_texture = ExtResource("2_7qsfh")
+metallic_texture_channel = 2
+roughness = 0.82
+roughness_texture = ExtResource("2_7qsfh")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_scale = 0.7
+normal_texture = ExtResource("3_ch5yp")
+ao_enabled = true
+ao_texture = ExtResource("2_7qsfh")
+uv1_scale = Vector3(7, 7, 7)
+uv1_triplanar = true

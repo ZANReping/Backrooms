@@ -1,0 +1,16 @@
+keys,zh_CN,en
+PROLOGUE_MONTH_DAY,"十月，星期日","October, Sunday"
+PROLOGUE_DATE,2026.10.18,2026.10.18
+PROLOGUE_CONTINUE,继续,Continue
+PROLOGUE_NEW_DAY,新的一天,A New Day
+PROLOGUE_SETTINGS,设置,Settings
+PROLOGUE_BACK,返回,Back
+PROLOGUE_PAUSED,暂停,Paused
+PROLOGUE_PAUSED_NOTE,稍停片刻。,Take a moment.
+PROLOGUE_SETTINGS_NOTE,按习惯调整观看与操作体验。,Adjust the viewing experience to your preference.
+PROLOGUE_DIFFICULTY_NOTE,选择后将与这份存档绑定。,This choice stays with this save.
+PROLOGUE_CASUAL_DETAIL,自动保存，也可手动保存。,Automatic and manual saving.
+PROLOGUE_HARDCORE_DETAIL,仅自动保存；死亡后可读取最近存档。,Automatic saving only. Load the latest save after death.
+PROLOGUE_EXTREME_DETAIL,仅自动保存；死亡后删除这份存档。,Automatic saving only. This save is deleted after death.
+PROLOGUE_IMMERSIVE_DETAIL,隐藏精确数值，始终保留彩色状态条与剩余量。,Hide exact values; show changes and low status.
+PROLOGUE_HEADBOB_DETAIL,行走时镜头轻微起伏。关闭可减少画面晃动。,Gentle camera movement while walking. Disable to reduce motion.

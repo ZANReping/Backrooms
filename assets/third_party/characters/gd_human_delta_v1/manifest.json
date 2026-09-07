@@ -1,0 +1,35 @@
+{
+  "status": "EVALUATION_CANDIDATE_NOT_COMMERCIAL_CLEARANCE",
+  "asset_id": "gd_human_delta_v1_candidate_human",
+  "source_repository": "https://github.com/Yni-Viar/gd-human-framework",
+  "source_commit": "cf0e05de95ddc2f5a371cb27eb4af72d016566d0",
+  "source_path": "src/addons/gd-human-framework/imported_mesh/body.glb",
+  "local_path": "res://assets/third_party/characters/gd_human_delta_v1/candidate_human.glb",
+  "sha256": "374A21C5082E0B06186698917DC4FC79A222C04F1AB627E6ADCC37901872FF04",
+  "license_declared_by_repository": "CC0-1.0",
+  "license_file": "LICENSE-CC0-1.0.txt",
+  "provenance_note": "The maintainer says this fork is based on MakeHuman assets and added CC0 because the original Go_MakeHuman_dot README said Public Domain or CC-by-zero. This is sufficient for local evaluation, but it is not a per-file provenance record or commercial clearance opinion.",
+  "excluded_dependencies": [
+    "Humanizer runtime (AGPL)",
+    "HumanShaders MicroDetail textures (CC-BY-4.0)",
+    "GD-Human-Framework scripts and autoload",
+    "Configura example characters"
+  ],
+  "godot_validation": {
+    "engine": "4.7.2-stable",
+    "imported": true,
+    "instantiated_headless": true,
+    "skeleton_bones": 66,
+    "body_blend_shapes": 188,
+    "embedded_meshes": [
+      "body",
+      "eyes",
+      "male_shirt_01",
+      "male_jeans_01",
+      "dress_mini_03",
+      "teeth",
+      "tongue"
+    ]
+  }
+}
+

@@ -1,0 +1,32 @@
+{
+  "schema": "backrooms_character_morph_mapping_v1",
+  "backend": "gd_human_delta_v1",
+  "value_note": "Apply only named native blend shapes that exist on each MeshInstance3D. Body has every listed source; clothing coverage is partial. Missing mappings must remain neutral until an artist-defined corrective is supplied.",
+  "face": {
+    "nose_width": {"positive": ["nose_scale_X"], "negative": [], "confidence": "direct_name"},
+    "nose_height": {"positive": ["nose_scale_Y"], "negative": [], "confidence": "direct_name"},
+    "nose_length": {"positive": ["nose_scale_Z"], "negative": [], "confidence": "direct_name"},
+    "eye_size": {"positive": [], "negative": [], "confidence": "missing"},
+    "eye_distance": {"positive": ["eye_pam11_+"], "negative": ["eye_pam11_-"], "confidence": "measured_on_mesh"},
+    "eye_height": {"positive": ["eye_pam12_+"], "negative": ["eye_pam12_-"], "confidence": "measured_on_mesh"},
+    "jaw_width": {"positive": [], "negative": [], "confidence": "missing_ambiguous_jaw_pam_targets"},
+    "jaw_height": {"positive": ["jaw_pam5_+"], "negative": ["jaw_pam5_-"], "confidence": "measured_on_mesh"},
+    "chin_length": {"positive": ["jaw_pam3_+"], "negative": ["jaw_pam3_-"], "confidence": "measured_on_mesh"},
+    "chin_width": {"positive": ["jaw_pam4_+"], "negative": ["jaw_pam4_-"], "confidence": "measured_on_mesh"},
+    "mouth_width": {"positive": ["lips_scale_X_+"], "negative": ["lips_scale_X_-"], "confidence": "direct_name"},
+    "mouth_height": {"positive": ["lips_scale_Y_+"], "negative": ["lips_scale_Y_-"], "confidence": "direct_name"},
+    "cheek_size": {"positive": ["cheek_pam1_+"], "negative": ["cheek_pam1_-"], "confidence": "measured_on_mesh"},
+    "brow_height": {"positive": ["head_pam_5_+"], "negative": ["head_pam_5_-"], "confidence": "measured_on_mesh"}
+  },
+  "body": {
+    "height": {"positive": [], "negative": [], "confidence": "missing_requires_bone_or_uniform_scale_policy"},
+    "weight": {"positive": ["fat"], "negative": ["skinny"], "confidence": "semantic_pair"},
+    "muscle": {"positive": ["muscle"], "negative": [], "confidence": "direct_name"},
+    "shoulder_width": {"positive": [], "negative": [], "confidence": "missing"},
+    "chest_size": {"positive": [], "negative": [], "confidence": "missing_ambiguous_breast_targets"},
+    "waist_size": {"positive": ["stomach+"], "negative": ["stomach-"], "confidence": "heuristic"},
+    "hip_size": {"positive": [], "negative": [], "confidence": "missing_ambiguous_butt_targets"},
+    "arm_size": {"positive": ["armfat"], "negative": [], "confidence": "heuristic"},
+    "leg_size": {"positive": ["legfat"], "negative": [], "confidence": "heuristic"}
+  }
+}

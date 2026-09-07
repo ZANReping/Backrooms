@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://c8vpoj7g4je2u"
+
+[deps]
+
+files=["res://resources/translations/character_creator.zh_CN.translation", "res://resources/translations/character_creator.en.translation"]
+
+source_file="res://resources/translations/character_creator.csv"
+dest_files=["res://resources/translations/character_creator.zh_CN.translation", "res://resources/translations/character_creator.en.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

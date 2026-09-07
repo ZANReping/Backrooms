@@ -1,0 +1,15 @@
+keys,zh_CN,en
+ITEM_COMMUTER_BAG,通勤背包,Commuter Bag
+ITEM_COMMUTER_BAG_DESC,结实的日常背包，右下角空间被内衬占用。,A sturdy everyday bag with its lower-right space taken by the lining.
+ITEM_POUCH,小收纳包,Pouch
+ITEM_POUCH_DESC,空置时可以压扁的小型收纳包。,A small pouch that folds flat while empty.
+ITEM_PHONE,手机,Phone
+ITEM_PHONE_DESC,从前厅带来的手机，仍保存着熟悉的资料。,A phone brought from the Frontrooms with familiar data still on it.
+ITEM_FLASHLIGHT,手电筒,Flashlight
+ITEM_FLASHLIGHT_DESC,一支使用电池供电的便携手电筒。,A portable battery-powered flashlight.
+ITEM_WATER,瓶装水,Bottled Water
+ITEM_WATER_DESC,一瓶五百毫升饮用水。,A bottle containing five hundred milliliters of drinking water.
+ITEM_L_TOOL,L 型工具,L-shaped Tool
+ITEM_L_TOOL_DESC,一件占用不规则空间的沉重工具。,A heavy tool with an irregular footprint.
+ITEM_WEIGHT_BLOCK,测试重块,Test Weight Block
+ITEM_WEIGHT_BLOCK_DESC,用于验证负重规则的二十五公斤重块。,A twenty-five kilogram block used to test encumbrance rules.

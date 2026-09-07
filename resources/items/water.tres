@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemDefinition" load_steps=2 format=3]
+[ext_resource type="Script" path="res://core/items/item_definition.gd" id="1"]
+[resource]
+script = ExtResource("1")
+id = &"water"
+display_name = "ITEM_WATER"
+description_key = &"ITEM_WATER_DESC"
+weight_kg = 0.05
+inventory_shape = Array[Vector2i]([Vector2i(0, 0), Vector2i(0, 1)])
+tags = Array[StringName]([&"consumable", &"liquid"])
+use_action = &"drink"
+world_visual_fallback = &"bottle"
+color = Color(0.55, 0.72, 0.78, 1)
+liquid_capacity = 500.0
+initial_liquid = 500.0
+world_size = Vector3(0.08, 0.24, 0.08)

@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[resource]
+resource_name = "phone_frame"
+albedo_color = Color(0.14509805, 0.15294118, 0.16470589, 1)
+metallic = 0.18
+roughness = 0.72

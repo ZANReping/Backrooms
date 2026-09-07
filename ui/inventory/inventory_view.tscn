@@ -1,0 +1,191 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://ui/inventory/inventory_view.gd" id="1_view"]
+[ext_resource type="Script" path="res://ui/inventory/inventory_grid.gd" id="2_grid"]
+
+[node name="InventoryView" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_view")
+
+[node name="Backdrop" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.025, 0.028, 0.03, 0.94)
+mouse_filter = 2
+
+[node name="Margin" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 32.0
+offset_top = 24.0
+offset_right = -32.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Root" type="VBoxContainer" parent="Margin"]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="Header" type="HBoxContainer" parent="Margin/Root"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Title" type="Label" parent="Margin/Root/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 28
+text = "INVENTORY_TITLE"
+
+[node name="WeightLabel" type="Label" parent="Margin/Root/Header"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "INVENTORY_WEIGHT"
+
+[node name="CloseButton" type="Button" parent="Margin/Root/Header"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "INVENTORY_CLOSE"
+
+[node name="Body" type="HSplitContainer" parent="Margin/Root"]
+layout_mode = 2
+size_flags_vertical = 3
+split_offset = 790
+
+[node name="Left" type="VBoxContainer" parent="Margin/Root/Body"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
+
+[node name="ContainerBar" type="HBoxContainer" parent="Margin/Root/Body/Left"]
+layout_mode = 2
+
+[node name="BackButton" type="Button" parent="Margin/Root/Body/Left/ContainerBar"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "INVENTORY_BACK"
+
+[node name="ContainerTitle" type="Label" parent="Margin/Root/Body/Left/ContainerBar"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 20
+
+[node name="Breadcrumb" type="Label" parent="Margin/Root/Body/Left"]
+unique_name_in_owner = true
+layout_mode = 2
+text_overrun_behavior = 3
+
+[node name="GridLayer" type="Control" parent="Margin/Root/Body/Left"]
+custom_minimum_size = Vector2(420, 320)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="InventoryGrid" type="Control" parent="Margin/Root/Body/Left/GridLayer"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_grid")
+
+[node name="EmptyContainer" type="Label" parent="Margin/Root/Body/Left/GridLayer"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "INVENTORY_NO_CONTAINER"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="EquipmentTitle" type="Label" parent="Margin/Root/Body/Left"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "INVENTORY_EQUIPMENT"
+
+[node name="EquipmentGrid" type="GridContainer" parent="Margin/Root/Body/Left"]
+unique_name_in_owner = true
+layout_mode = 2
+columns = 5
+theme_override_constants/h_separation = 8
+theme_override_constants/v_separation = 8
+
+[node name="Details" type="VBoxContainer" parent="Margin/Root/Body"]
+custom_minimum_size = Vector2(330, 0)
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="DetailHeading" type="Label" parent="Margin/Root/Body/Details"]
+layout_mode = 2
+text = "INVENTORY_DETAILS"
+
+[node name="DetailName" type="Label" parent="Margin/Root/Body/Details"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+autowrap_mode = 2
+
+[node name="DetailDescription" type="Label" parent="Margin/Root/Body/Details"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+autowrap_mode = 2
+vertical_alignment = 1
+
+[node name="DetailStatus" type="Label" parent="Margin/Root/Body/Details"]
+unique_name_in_owner = true
+layout_mode = 2
+autowrap_mode = 2
+
+[node name="ActionHint" type="Label" parent="Margin/Root/Body/Details"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.72, 0.74, 0.7, 1)
+theme_override_font_sizes/font_size = 14
+text = "INVENTORY_ACTION_HINT_NO_SELECTION"
+autowrap_mode = 2
+
+[node name="EquipTarget" type="OptionButton" parent="Margin/Root/Body/Details"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Actions" type="GridContainer" parent="Margin/Root/Body/Details"]
+layout_mode = 2
+columns = 2
+
+[node name="EquipButton" type="Button" parent="Margin/Root/Body/Details/Actions"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "INVENTORY_EQUIP"
+
+[node name="OpenButton" type="Button" parent="Margin/Root/Body/Details/Actions"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "INVENTORY_OPEN"
+
+[node name="UseButton" type="Button" parent="Margin/Root/Body/Details/Actions"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "INVENTORY_USE"
+
+[node name="DropButton" type="Button" parent="Margin/Root/Body/Details/Actions"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "INVENTORY_DROP"

@@ -1,0 +1,6 @@
+keys,zh_CN,en
+CAMERA_CONTROLS,WASD 移动 · 鼠标取景 · 左键拍照 · Esc / P 返回手机,WASD move · Mouse look · Left click capture · Esc / P return
+CAMERA_MODE_PHOTO,照片,PHOTO
+CAMERA_LOCAL,本地保存,LOCAL STORAGE
+CAMERA_READY,自动, AUTO
+CAMERA_SAVED,已保存至相册,Saved to album

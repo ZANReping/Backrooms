@@ -1,0 +1,137 @@
+[gd_scene load_steps=17 format=3]
+
+[ext_resource type="Script" path="res://player/player_controller.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/player/default_movement.tres" id="2"]
+[ext_resource type="Script" path="res://player/player_audio.gd" id="3"]
+[ext_resource type="Resource" path="res://resources/player/concrete_footstep.tres" id="4"]
+[ext_resource type="Resource" path="res://resources/player/carpet_footstep.tres" id="5"]
+[ext_resource type="Script" path="res://resources/player/audio_profile.gd" id="6"]
+
+[sub_resource type="CapsuleShape3D" id="Capsule"]
+radius = 0.34
+height = 1.8
+
+[sub_resource type="BoxShape3D" id="Clearance"]
+size = Vector3(0.58, 0.58, 0.58)
+
+[sub_resource type="CapsuleMesh" id="TorsoMesh"]
+radius = 0.22
+height = 0.75
+
+[sub_resource type="CapsuleMesh" id="LimbMesh"]
+radius = 0.075
+height = 0.56
+
+[sub_resource type="BoxMesh" id="FootMesh"]
+size = Vector3(0.18, 0.12, 0.3)
+
+[sub_resource type="StandardMaterial3D" id="BodyMaterial"]
+albedo_color = Color(0.26, 0.28, 0.3, 1)
+roughness = 0.85
+
+[sub_resource type="Animation" id="ResetAnimation"]
+resource_name = "RESET"
+length = 0.1
+
+[sub_resource type="Animation" id="InteractAnimation"]
+resource_name = "interact"
+length = 0.28
+tracks/0/type = "value"
+tracks/0/path = NodePath("RightArm:rotation:x")
+tracks/0/keys = {"times": PackedFloat32Array(0, 0.14, 0.28), "transitions": PackedFloat32Array(1, 1, 1), "update": 0, "values": [0.35, 0.95, 0.35]}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary"]
+_data = {&"RESET": SubResource("ResetAnimation"), &"interact": SubResource("InteractAnimation")}
+
+[node name="Player" type="CharacterBody3D"]
+collision_mask = 13
+script = ExtResource("1")
+config = ExtResource("2")
+floor_snap_length = 0.2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+position = Vector3(0, 0.9, 0)
+shape = SubResource("Capsule")
+
+[node name="StandClearance" type="ShapeCast3D" parent="."]
+position = Vector3(0, 1.5, 0)
+shape = SubResource("Clearance")
+collision_mask = 1
+target_position = Vector3(0, 0.01, 0)
+
+[node name="CameraPivot" type="Node3D" parent="."]
+position = Vector3(0, 1.62, -0.16)
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot"]
+current = true
+near = 0.05
+
+[node name="InteractionOrigin" type="Marker3D" parent="CameraPivot/Camera3D"]
+
+[node name="BodyVisual" type="Node3D" parent="."]
+
+[node name="Torso" type="MeshInstance3D" parent="BodyVisual"]
+position = Vector3(0, 0.98, 0.18)
+mesh = SubResource("TorsoMesh")
+material_override = SubResource("BodyMaterial")
+
+[node name="LeftLeg" type="MeshInstance3D" parent="BodyVisual"]
+position = Vector3(-0.13, 0.38, -0.12)
+mesh = SubResource("LimbMesh")
+material_override = SubResource("BodyMaterial")
+
+[node name="RightLeg" type="MeshInstance3D" parent="BodyVisual"]
+position = Vector3(0.13, 0.38, -0.12)
+mesh = SubResource("LimbMesh")
+material_override = SubResource("BodyMaterial")
+
+[node name="LeftFoot" type="MeshInstance3D" parent="BodyVisual"]
+position = Vector3(-0.13, 0.08, -0.22)
+mesh = SubResource("FootMesh")
+material_override = SubResource("BodyMaterial")
+
+[node name="RightFoot" type="MeshInstance3D" parent="BodyVisual"]
+position = Vector3(0.13, 0.08, -0.22)
+mesh = SubResource("FootMesh")
+material_override = SubResource("BodyMaterial")
+
+[node name="RightArm" type="Node3D" parent="BodyVisual"]
+position = Vector3(0.31, 1.3, 0.04)
+rotation = Vector3(0.35, 0, 0)
+
+[node name="Mesh" type="MeshInstance3D" parent="BodyVisual/RightArm"]
+position = Vector3(0, -0.28, 0)
+mesh = SubResource("LimbMesh")
+material_override = SubResource("BodyMaterial")
+
+[node name="RightHand" type="Marker3D" parent="BodyVisual/RightArm"]
+position = Vector3(0, -0.57, 0)
+
+[node name="LeftArm" type="Node3D" parent="BodyVisual"]
+position = Vector3(-0.31, 1.3, 0.04)
+rotation = Vector3(0.35, 0, 0)
+
+[node name="Mesh" type="MeshInstance3D" parent="BodyVisual/LeftArm"]
+position = Vector3(0, -0.28, 0)
+mesh = SubResource("LimbMesh")
+material_override = SubResource("BodyMaterial")
+
+[node name="LeftHand" type="Marker3D" parent="BodyVisual/LeftArm"]
+position = Vector3(0, -0.57, 0)
+
+[node name="EquipmentMounts" type="Node3D" parent="BodyVisual"]
+
+[node name="Back" type="Marker3D" parent="BodyVisual/EquipmentMounts"]
+position = Vector3(0, 1.18, 0.25)
+
+[node name="InteractionAnimation" type="AnimationPlayer" parent="BodyVisual"]
+libraries = {&"": SubResource("AnimationLibrary")}
+
+[node name="PlayerAudio" type="Node" parent="."]
+script = ExtResource("3")
+profiles = Array[ExtResource("6")]([ExtResource("4"), ExtResource("5")])
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="PlayerAudio"]
+position = Vector3(0, 0.15, 0.1)
+unit_size = 1.5
+max_distance = 8.0

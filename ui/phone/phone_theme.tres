@@ -1,0 +1,217 @@
+[gd_resource type="Theme" load_steps=14 format=3]
+
+[sub_resource type="SystemFont" id="Font"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Microsoft YaHei", "Noto Sans CJK SC", "Segoe UI", "Arial")
+font_weight = 400
+
+[sub_resource type="StyleBoxFlat" id="Dark"]
+bg_color = Color(0.047, 0.055, 0.071, 1)
+content_margin_left = 14.0
+content_margin_top = 5.0
+content_margin_right = 14.0
+content_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id="Light"]
+bg_color = Color(0.965, 0.972, 0.98, 1)
+content_margin_left = 14.0
+content_margin_top = 10.0
+content_margin_right = 14.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxFlat" id="Hero"]
+bg_color = Color(0.075, 0.105, 0.16, 1)
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+content_margin_left = 18.0
+content_margin_top = 14.0
+content_margin_right = 18.0
+content_margin_bottom = 14.0
+
+[sub_resource type="StyleBoxFlat" id="Card"]
+bg_color = Color(0.992, 0.995, 1, 1)
+border_width_bottom = 1
+border_color = Color(0.86, 0.88, 0.91, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+content_margin_left = 12.0
+content_margin_top = 10.0
+content_margin_right = 12.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxFlat" id="Route"]
+bg_color = Color(0.91, 0.94, 1, 1)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+content_margin_left = 14.0
+content_margin_top = 11.0
+content_margin_right = 14.0
+content_margin_bottom = 11.0
+
+[sub_resource type="StyleBoxFlat" id="BubbleIn"]
+bg_color = Color(0.91, 0.925, 0.945, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+content_margin_left = 11.0
+content_margin_top = 7.0
+content_margin_right = 11.0
+content_margin_bottom = 7.0
+
+[sub_resource type="StyleBoxFlat" id="BubbleOut"]
+bg_color = Color(0.82, 0.91, 1, 1)
+corner_radius_top_left = 14
+corner_radius_top_right = 5
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+content_margin_left = 11.0
+content_margin_top = 7.0
+content_margin_right = 11.0
+content_margin_bottom = 7.0
+
+[sub_resource type="StyleBoxFlat" id="Button"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.83, 0.855, 0.89, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+content_margin_left = 11.0
+content_margin_top = 8.0
+content_margin_right = 11.0
+content_margin_bottom = 8.0
+
+[sub_resource type="StyleBoxFlat" id="Hover"]
+bg_color = Color(0.91, 0.94, 0.98, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.45, 0.57, 0.75, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+content_margin_left = 11.0
+content_margin_top = 8.0
+content_margin_right = 11.0
+content_margin_bottom = 8.0
+
+[sub_resource type="StyleBoxFlat" id="Input"]
+bg_color = Color(0.91, 0.925, 0.945, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+content_margin_left = 11.0
+content_margin_top = 7.0
+content_margin_right = 11.0
+content_margin_bottom = 7.0
+
+[sub_resource type="StyleBoxFlat" id="Focus"]
+bg_color = Color(0, 0, 0, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.22, 0.46, 0.94, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="Avatar"]
+bg_color = Color(0.21, 0.42, 0.78, 1)
+corner_radius_top_left = 19
+corner_radius_top_right = 19
+corner_radius_bottom_right = 19
+corner_radius_bottom_left = 19
+
+[resource]
+default_font = SubResource("Font")
+default_font_size = 15
+Label/colors/font_color = Color(0.075, 0.095, 0.125, 1)
+Button/colors/font_color = Color(0.075, 0.095, 0.125, 1)
+Button/colors/font_hover_color = Color(0.035, 0.06, 0.1, 1)
+Button/colors/font_pressed_color = Color(0.02, 0.045, 0.08, 1)
+Button/colors/font_disabled_color = Color(0.46, 0.49, 0.54, 1)
+Button/colors/icon_normal_color = Color(0.12, 0.16, 0.21, 1)
+Button/colors/icon_hover_color = Color(0.035, 0.06, 0.1, 1)
+Button/colors/icon_pressed_color = Color(0.02, 0.045, 0.08, 1)
+Button/colors/icon_focus_color = Color(0.12, 0.16, 0.21, 1)
+Button/colors/icon_disabled_color = Color(0.46, 0.49, 0.54, 1)
+Button/constants/icon_max_width = 25
+Button/styles/normal = SubResource("Button")
+Button/styles/hover = SubResource("Hover")
+Button/styles/pressed = SubResource("Hover")
+Button/styles/disabled = SubResource("Button")
+Button/styles/focus = SubResource("Focus")
+LineEdit/colors/font_color = Color(0.075, 0.095, 0.125, 1)
+LineEdit/colors/font_uneditable_color = Color(0.27, 0.31, 0.37, 1)
+LineEdit/colors/caret_color = Color(0.12, 0.16, 0.21, 1)
+LineEdit/colors/font_placeholder_color = Color(0.39, 0.43, 0.49, 1)
+LineEdit/styles/normal = SubResource("Input")
+LineEdit/styles/read_only = SubResource("Input")
+LineEdit/styles/focus = SubResource("Focus")
+TextEdit/colors/font_color = Color(0.075, 0.095, 0.125, 1)
+TextEdit/colors/caret_color = Color(0.12, 0.16, 0.21, 1)
+TextEdit/colors/font_placeholder_color = Color(0.39, 0.43, 0.49, 1)
+TextEdit/styles/normal = SubResource("Input")
+TextEdit/styles/read_only = SubResource("Input")
+TextEdit/styles/focus = SubResource("Focus")
+OptionButton/colors/font_color = Color(0.075, 0.095, 0.125, 1)
+OptionButton/styles/normal = SubResource("Button")
+OptionButton/styles/hover = SubResource("Hover")
+OptionButton/styles/pressed = SubResource("Hover")
+OptionButton/styles/focus = SubResource("Focus")
+PhoneChrome/base_type = &"PanelContainer"
+PhoneChrome/styles/panel = SubResource("Dark")
+PhoneContent/base_type = &"PanelContainer"
+PhoneContent/styles/panel = SubResource("Light")
+PhoneCard/base_type = &"PanelContainer"
+PhoneCard/styles/panel = SubResource("Card")
+PhoneComposer/base_type = &"PanelContainer"
+PhoneComposer/styles/panel = SubResource("Card")
+PhoneListRow/base_type = &"PanelContainer"
+PhoneListRow/styles/panel = SubResource("Card")
+PhoneRouteCard/base_type = &"PanelContainer"
+PhoneRouteCard/styles/panel = SubResource("Route")
+PhoneBubbleIncoming/base_type = &"PanelContainer"
+PhoneBubbleIncoming/styles/panel = SubResource("BubbleIn")
+PhoneBubbleOutgoing/base_type = &"PanelContainer"
+PhoneBubbleOutgoing/styles/panel = SubResource("BubbleOut")
+PhoneHero/base_type = &"PanelContainer"
+PhoneHero/styles/panel = SubResource("Hero")
+PhoneChromeLabel/base_type = &"Label"
+PhoneChromeLabel/colors/font_color = Color(0.94, 0.96, 0.98, 1)
+PhoneMutedLabel/base_type = &"Label"
+PhoneMutedLabel/colors/font_color = Color(0.35, 0.39, 0.45, 1)
+PhoneTitle/base_type = &"Label"
+PhoneTitle/colors/font_color = Color(0.055, 0.075, 0.105, 1)
+PhoneTitle/font_sizes/font_size = 20
+PhoneHeroMeta/base_type = &"Label"
+PhoneHeroMeta/colors/font_color = Color(0.72, 0.8, 0.9, 1)
+PhoneHeroClock/base_type = &"Label"
+PhoneHeroClock/colors/font_color = Color(1, 1, 1, 1)
+PhoneHeroClock/font_sizes/font_size = 38
+PhoneAvatar/base_type = &"PanelContainer"
+PhoneAvatar/styles/panel = SubResource("Avatar")
+PhoneAvatarLabel/base_type = &"Label"
+PhoneAvatarLabel/colors/font_color = Color(1, 1, 1, 1)
+PhoneAvatarLabel/font_sizes/font_size = 17
+PhoneAppButton/base_type = &"Button"
+PhoneAppButton/colors/font_color = Color(1, 1, 1, 1)
+PhoneAppButton/colors/font_hover_color = Color(1, 1, 1, 1)
+PhoneAppButton/colors/font_pressed_color = Color(1, 1, 1, 1)
+PhoneAppButton/font_sizes/font_size = 12
+PhoneAppButton/constants/icon_max_width = 31

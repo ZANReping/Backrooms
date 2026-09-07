@@ -1,0 +1,65 @@
+[gd_resource type="Resource" script_class="PhoneContentCatalog" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://resources/phone/phone_content_catalog.gd" id="1_catalog"]
+
+[resource]
+script = ExtResource("1_catalog")
+conversations = Array[Dictionary]([{
+"name_key": &"PHONE_CHAT_COLLEAGUE",
+"preview_key": &"PHONE_CHAT_COLLEAGUE_PREVIEW",
+"time_key": &"PHONE_CHAT_TIME_0741",
+"lines": Array[StringName]([&"PHONE_CHAT_COLLEAGUE_1", &"PHONE_CHAT_COLLEAGUE_2"])
+}, {
+"name_key": &"PHONE_CHAT_FRIEND",
+"preview_key": &"PHONE_CHAT_FRIEND_PREVIEW",
+"time_key": &"PHONE_CHAT_TIME_YESTERDAY",
+"lines": Array[StringName]([&"PHONE_CHAT_FRIEND_1", &"PHONE_CHAT_FRIEND_2"])
+}, {
+"name_key": &"PHONE_CHAT_GROUP",
+"preview_key": &"PHONE_CHAT_GROUP_PREVIEW",
+"time_key": &"PHONE_CHAT_TIME_0718",
+"lines": Array[StringName]([&"PHONE_CHAT_GROUP_1", &"PHONE_CHAT_GROUP_2"])
+}])
+map_places = Array[Dictionary]([{
+"name_key": &"PHONE_MAP_HOME",
+"detail_key": &"PHONE_MAP_HOME_DETAIL"
+}, {
+"name_key": &"PHONE_MAP_OFFICE",
+"detail_key": &"PHONE_MAP_OFFICE_DETAIL"
+}, {
+"name_key": &"PHONE_MAP_WATER",
+"detail_key": &"PHONE_MAP_WATER_DETAIL"
+}])
+browser_pages = Array[Dictionary]([{
+"id": &"weather",
+"address_key": &"PHONE_BROWSER_WEATHER_ADDRESS",
+"title_key": &"PHONE_BROWSER_WEATHER",
+"body_key": &"PHONE_BROWSER_WEATHER_BODY"
+}, {
+"id": &"commute",
+"address_key": &"PHONE_BROWSER_COMMUTE_ADDRESS",
+"title_key": &"PHONE_BROWSER_COMMUTE",
+"body_key": &"PHONE_BROWSER_COMMUTE_BODY"
+}, {
+"id": &"notice",
+"address_key": &"PHONE_BROWSER_NOTICE_ADDRESS",
+"title_key": &"PHONE_BROWSER_NOTICE",
+"body_key": &"PHONE_BROWSER_NOTICE_BODY"
+}])
+contacts = Array[Dictionary]([{
+"name_key": &"PHONE_CONTACT_HOME",
+"number": "021-5550-0182"
+}, {
+"name_key": &"PHONE_CONTACT_MING",
+"number": "138 5550 0241"
+}, {
+"name_key": &"PHONE_CONTACT_OFFICE",
+"number": "800-555-0116"
+}])
+recent_calls = Array[Dictionary]([{
+"name_key": &"PHONE_CONTACT_MING",
+"detail_key": &"PHONE_CALL_YESTERDAY"
+}, {
+"name_key": &"PHONE_CONTACT_OFFICE",
+"detail_key": &"PHONE_CALL_MONDAY"
+}])

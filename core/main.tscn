@@ -1,0 +1,96 @@
+[gd_scene load_steps=17 format=3]
+
+[ext_resource type="Script" path="res://core/foundation_app.gd" id="1"]
+[ext_resource type="PackedScene" path="res://player/player.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://ui/shell/foundation_ui.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://ui/inventory/inventory_view.tscn" id="4"]
+[ext_resource type="Resource" path="res://resources/items/catalog.tres" id="5"]
+[ext_resource type="Resource" path="res://resources/world/test_routes.tres" id="6"]
+[ext_resource type="Resource" path="res://resources/world/test_loadout.tres" id="7"]
+[ext_resource type="Script" path="res://player/player_interactor.gd" id="8"]
+[ext_resource type="Script" path="res://core/world/world_item_service.gd" id="9"]
+[ext_resource type="Script" path="res://player/equipment_presentation.gd" id="10"]
+[ext_resource type="Theme" path="res://ui/shell/shell_theme.tres" id="11"]
+[ext_resource type="Script" path="res://core/items/item_use_config.gd" id="12"]
+
+[sub_resource type="Environment" id="Environment"]
+background_mode = 1
+background_color = Color(0.055, 0.065, 0.06, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.78, 0.81, 0.82, 1)
+ambient_light_energy = 0.65
+reflected_light_source = 2
+tonemap_mode = 2
+
+[sub_resource type="Resource" id="UseConfig"]
+script = ExtResource("12")
+
+[sub_resource type="SystemFont" id="ChineseFont"]
+font_names = PackedStringArray("Microsoft YaHei UI", "Noto Sans CJK SC", "sans-serif")
+
+[sub_resource type="Theme" id="FontTheme"]
+default_font = SubResource("ChineseFont")
+default_font_size = 18
+
+[node name="FoundationApp" type="Node3D"]
+script = ExtResource("1")
+item_catalog = ExtResource("5")
+route_catalog = ExtResource("6")
+loadout = ExtResource("7")
+use_config = SubResource("UseConfig")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment")
+
+[node name="LevelHost" type="Node3D" parent="."]
+unique_name_in_owner = true
+
+[node name="WorldItems" type="Node3D" parent="."]
+unique_name_in_owner = true
+script = ExtResource("9")
+
+[node name="Player" parent="." instance=ExtResource("2")]
+unique_name_in_owner = true
+collision_layer = 2
+collision_mask = 13
+
+[node name="Interactor" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("8")
+
+[node name="EquipmentPresentation" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("10")
+
+[node name="FoundationUI" parent="." instance=ExtResource("3")]
+unique_name_in_owner = true
+
+[node name="InventoryLayer" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="InventoryView" parent="InventoryLayer" instance=ExtResource("4")]
+unique_name_in_owner = true
+visible = false
+theme = ExtResource("11")
+
+[node name="TransitionLayer" type="CanvasLayer" parent="."]
+layer = 10
+
+[node name="LoadingCover" type="ColorRect" parent="TransitionLayer"]
+unique_name_in_owner = true
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.025, 0.03, 0.028, 1)
+theme = SubResource("FontTheme")
+
+[node name="Label" type="Label" parent="TransitionLayer/LoadingCover"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "LOADING"
+horizontal_alignment = 1
+vertical_alignment = 1

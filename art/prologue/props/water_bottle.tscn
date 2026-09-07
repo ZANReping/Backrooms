@@ -1,0 +1,146 @@
+[gd_scene format=3]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n5pp8"]
+resource_name = "water"
+transparency = 1
+cull_mode = 2
+albedo_color = Color(0.52, 0.76, 0.83, 0.48)
+roughness = 0.12
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ncpb2"]
+top_radius = 0.029
+bottom_radius = 0.029
+height = 0.165
+radial_segments = 24
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2tx28"]
+resource_name = "bottle"
+transparency = 1
+cull_mode = 2
+albedo_color = Color(0.72, 0.86, 0.9, 0.62)
+roughness = 0.18
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_1v5hv"]
+top_radius = 0.0325
+bottom_radius = 0.0325
+height = 0.178
+radial_segments = 24
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_tre01"]
+top_radius = 0.027
+bottom_radius = 0.027
+height = 0.025
+radial_segments = 24
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_qhmg3"]
+top_radius = 0.016
+bottom_radius = 0.016
+height = 0.022
+radial_segments = 20
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3fa73"]
+resource_name = "cap_blue"
+albedo_color = Color(0.105882354, 0.37254903, 0.53333336, 1)
+roughness = 0.38
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_244hg"]
+top_radius = 0.019
+bottom_radius = 0.019
+height = 0.017
+radial_segments = 20
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4okx4"]
+resource_name = "label"
+albedo_color = Color(0.89411765, 0.8745098, 0.8235294, 1)
+roughness = 0.82
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_e547v"]
+top_radius = 0.033
+bottom_radius = 0.033
+height = 0.058
+radial_segments = 24
+
+[sub_resource type="TorusMesh" id="TorusMesh_jek48"]
+inner_radius = 0.03
+outer_radius = 0.0323
+rings = 24
+ring_segments = 10
+
+[sub_resource type="TorusMesh" id="TorusMesh_thf3m"]
+inner_radius = 0.03
+outer_radius = 0.0323
+rings = 24
+ring_segments = 10
+
+[sub_resource type="TorusMesh" id="TorusMesh_0tefe"]
+inner_radius = 0.03
+outer_radius = 0.0323
+rings = 24
+ring_segments = 10
+
+[sub_resource type="TorusMesh" id="TorusMesh_x0hmb"]
+inner_radius = 0.03
+outer_radius = 0.0323
+rings = 24
+ring_segments = 10
+
+[node name="WaterBottle" type="Node3D" unique_id=843051540]
+
+[node name="Water" type="MeshInstance3D" parent="." unique_id=541216243]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.018, 0)
+material_override = SubResource("StandardMaterial3D_n5pp8")
+mesh = SubResource("CylinderMesh_ncpb2")
+
+[node name="BottleBody" type="MeshInstance3D" parent="." unique_id=1958109556]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.014, 0)
+material_override = SubResource("StandardMaterial3D_2tx28")
+mesh = SubResource("CylinderMesh_1v5hv")
+
+[node name="Shoulder" type="MeshInstance3D" parent="." unique_id=609665533]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.085, 0)
+material_override = SubResource("StandardMaterial3D_2tx28")
+mesh = SubResource("CylinderMesh_tre01")
+
+[node name="Neck" type="MeshInstance3D" parent="." unique_id=596830522]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.103, 0)
+material_override = SubResource("StandardMaterial3D_2tx28")
+mesh = SubResource("CylinderMesh_qhmg3")
+
+[node name="BlueCap" type="MeshInstance3D" parent="." unique_id=1479597462]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.108, 0)
+material_override = SubResource("StandardMaterial3D_3fa73")
+mesh = SubResource("CylinderMesh_244hg")
+
+[node name="PaperLabel" type="MeshInstance3D" parent="." unique_id=1567207543]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.014, 0)
+material_override = SubResource("StandardMaterial3D_4okx4")
+mesh = SubResource("CylinderMesh_e547v")
+
+[node name="ChinesePaperLabel" type="Label3D" parent="." unique_id=1192196921]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.012, 0.0334)
+pixel_size = 0.001
+modulate = Color(0.21176471, 0.37254903, 0.4509804, 1)
+outline_modulate = Color(0.92, 0.9, 0.84, 0.8)
+text = "饮用水"
+font_size = 20
+outline_size = 2
+
+[node name="BottleRib" type="MeshInstance3D" parent="." unique_id=1865024166]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.086, 0)
+material_override = SubResource("StandardMaterial3D_2tx28")
+mesh = SubResource("TorusMesh_jek48")
+
+[node name="@MeshInstance3D@38" type="MeshInstance3D" parent="." unique_id=1706538883]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.068, 0)
+material_override = SubResource("StandardMaterial3D_2tx28")
+mesh = SubResource("TorusMesh_thf3m")
+
+[node name="@MeshInstance3D@39" type="MeshInstance3D" parent="." unique_id=651753998]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.052, 0)
+material_override = SubResource("StandardMaterial3D_2tx28")
+mesh = SubResource("TorusMesh_0tefe")
+
+[node name="@MeshInstance3D@40" type="MeshInstance3D" parent="." unique_id=1548172501]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.067, 0)
+material_override = SubResource("StandardMaterial3D_2tx28")
+mesh = SubResource("TorusMesh_x0hmb")

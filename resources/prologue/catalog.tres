@@ -1,0 +1,194 @@
+[gd_resource type="Resource" script_class="ItemCatalog" format=3]
+
+[ext_resource type="Script" path="res://core/items/item_definition.gd" id="1_1pa7m"]
+[ext_resource type="Script" path="res://core/inventory/container_definition.gd" id="2_3m1jq"]
+[ext_resource type="Script" path="res://core/items/item_description_rule.gd" id="3_cpm2h"]
+[ext_resource type="Texture2D" path="res://assets/prologue/icons/backpack.png" id="4_4rhmm"]
+[ext_resource type="PackedScene" path="res://art/prologue/props/backpack.tscn" id="5_jwbth"]
+[ext_resource type="Texture2D" path="res://assets/prologue/icons/phone.png" id="6_ohf0v"]
+[ext_resource type="PackedScene" path="res://art/prologue/props/phone.tscn" id="7_y42xq"]
+[ext_resource type="Texture2D" path="res://assets/prologue/icons/water_bottle.png" id="8_kfk6o"]
+[ext_resource type="PackedScene" path="res://art/prologue/props/water_bottle.tscn" id="9_7hk22"]
+[ext_resource type="Texture2D" path="res://assets/prologue/icons/laptop.png" id="10_8md7x"]
+[ext_resource type="PackedScene" path="res://art/prologue/props/laptop.tscn" id="11_brjrd"]
+[ext_resource type="Texture2D" path="res://assets/prologue/icons/keys.png" id="12_ah5m3"]
+[ext_resource type="PackedScene" path="res://art/prologue/props/keys.tscn" id="13_ubap7"]
+[ext_resource type="Texture2D" path="res://assets/prologue/icons/wallet.png" id="14_bt564"]
+[ext_resource type="PackedScene" path="res://art/prologue/props/wallet.tscn" id="15_8j1wl"]
+[ext_resource type="Script" path="res://core/items/item_catalog.gd" id="16_v8pfh"]
+
+[sub_resource type="Resource" id="Resource_v0gd1"]
+script = ExtResource("2_3m1jq")
+id = &"commuter_bag_grid"
+display_name = "ITEM_COMMUTER_BAG"
+blocked_cells = Array[Vector2i]([Vector2i(5, 4)])
+
+[sub_resource type="Resource" id="Resource_fxeu0"]
+script = ExtResource("1_1pa7m")
+id = &"commuter_bag"
+display_name = "ITEM_COMMUTER_BAG"
+description_key = &"ITEM_COMMUTER_BAG_DESC"
+icon = ExtResource("4_4rhmm")
+world_scene = ExtResource("5_jwbth")
+weight_kg = 0.9
+inventory_shape = Array[Vector2i]([Vector2i(0, 0), Vector2i(1, 0), Vector2i(0, 1), Vector2i(1, 1)])
+tags = Array[StringName]([&"container"])
+equip_slots = Array[StringName]([&"back", &"primary_hand", &"secondary_hand"])
+world_visual_fallback = &"bag"
+color = Color(0.24, 0.28, 0.25, 1)
+container_definition = SubResource("Resource_v0gd1")
+empty_inventory_shape = Array[Vector2i]([Vector2i(0, 0), Vector2i(1, 0), Vector2i(0, 1), Vector2i(1, 1)])
+packed_inventory_shape = Array[Vector2i]([Vector2i(0, 0), Vector2i(1, 0), Vector2i(2, 0), Vector2i(3, 0), Vector2i(4, 0), Vector2i(5, 0), Vector2i(0, 1), Vector2i(1, 1), Vector2i(2, 1), Vector2i(3, 1), Vector2i(4, 1), Vector2i(5, 1), Vector2i(0, 2), Vector2i(1, 2), Vector2i(2, 2), Vector2i(3, 2), Vector2i(4, 2), Vector2i(5, 2), Vector2i(0, 3), Vector2i(1, 3), Vector2i(2, 3), Vector2i(3, 3), Vector2i(4, 3), Vector2i(5, 3), Vector2i(0, 4), Vector2i(1, 4), Vector2i(2, 4), Vector2i(3, 4), Vector2i(4, 4), Vector2i(5, 4)])
+world_size = Vector3(0.3, 0.43, 0.17)
+
+[sub_resource type="Resource" id="Resource_iievs"]
+script = ExtResource("2_3m1jq")
+id = &"pouch_grid"
+display_name = "ITEM_POUCH"
+grid_width = 2
+grid_height = 2
+
+[sub_resource type="Resource" id="Resource_ar22e"]
+script = ExtResource("1_1pa7m")
+id = &"pouch"
+display_name = "ITEM_POUCH"
+description_key = &"ITEM_POUCH_DESC"
+weight_kg = 0.2
+tags = Array[StringName]([&"container"])
+world_visual_fallback = &"pouch"
+color = Color(0.3, 0.25, 0.18, 1)
+container_definition = SubResource("Resource_iievs")
+empty_inventory_shape = Array[Vector2i]([Vector2i(0, 0)])
+packed_inventory_shape = Array[Vector2i]([Vector2i(0, 0), Vector2i(1, 0), Vector2i(0, 1), Vector2i(1, 1)])
+world_size = Vector3(0.24, 0.18, 0.1)
+
+[sub_resource type="Resource" id="Resource_ex0yp"]
+script = ExtResource("1_1pa7m")
+id = &"phone"
+display_name = "ITEM_PHONE"
+description_key = &"ITEM_PHONE_DESC"
+icon = ExtResource("6_ohf0v")
+world_scene = ExtResource("7_y42xq")
+weight_kg = 0.2
+inventory_shape = Array[Vector2i]([Vector2i(0, 0), Vector2i(0, 1)])
+tags = Array[StringName]([&"electronics", &"keepsake"])
+use_action = &"phone"
+frontrooms_keepsake = true
+world_visual_fallback = &"phone"
+color = Color(0.08, 0.09, 0.1, 1)
+charge_capacity = 100.0
+initial_charge = 100.0
+world_size = Vector3(0.081, 0.146, 0.009)
+
+[sub_resource type="Resource" id="Resource_4j7e8"]
+script = ExtResource("1_1pa7m")
+id = &"flashlight"
+display_name = "ITEM_FLASHLIGHT"
+description_key = &"ITEM_FLASHLIGHT_DESC"
+weight_kg = 0.3
+inventory_shape = Array[Vector2i]([Vector2i(0, 0), Vector2i(0, 1)])
+tags = Array[StringName]([&"tool", &"electronics"])
+use_action = &"flashlight"
+world_visual_fallback = &"flashlight"
+color = Color(0.18, 0.19, 0.2, 1)
+charge_capacity = 100.0
+initial_charge = 100.0
+world_size = Vector3(0.06, 0.22, 0.06)
+
+[sub_resource type="Resource" id="Resource_5v4eg"]
+script = ExtResource("1_1pa7m")
+id = &"water"
+display_name = "ITEM_WATER"
+description_key = &"ITEM_WATER_DESC"
+icon = ExtResource("8_kfk6o")
+world_scene = ExtResource("9_7hk22")
+weight_kg = 0.05
+inventory_shape = Array[Vector2i]([Vector2i(0, 0), Vector2i(0, 1)])
+tags = Array[StringName]([&"consumable", &"liquid"])
+use_action = &"drink"
+world_visual_fallback = &"bottle"
+color = Color(0.55, 0.72, 0.78, 1)
+liquid_capacity = 500.0
+initial_liquid = 500.0
+world_size = Vector3(0.065, 0.225, 0.065)
+
+[sub_resource type="Resource" id="Resource_hcoia"]
+script = ExtResource("1_1pa7m")
+id = &"l_tool"
+display_name = "ITEM_L_TOOL"
+description_key = &"ITEM_L_TOOL_DESC"
+weight_kg = 0.7
+inventory_shape = Array[Vector2i]([Vector2i(0, 0), Vector2i(0, 1), Vector2i(1, 1)])
+tags = Array[StringName]([&"tool"])
+world_visual_fallback = &"tool"
+color = Color(0.58, 0.46, 0.2, 1)
+world_size = Vector3(0.28, 0.08, 0.18)
+
+[sub_resource type="Resource" id="Resource_0v6i7"]
+script = ExtResource("1_1pa7m")
+id = &"weight_block"
+display_name = "ITEM_WEIGHT_BLOCK"
+description_key = &"ITEM_WEIGHT_BLOCK_DESC"
+weight_kg = 25.0
+inventory_shape = Array[Vector2i]([Vector2i(0, 0), Vector2i(1, 0), Vector2i(0, 1), Vector2i(1, 1)])
+can_rotate = false
+tags = Array[StringName]([&"test"])
+world_visual_fallback = &"block"
+color = Color(0.35, 0.35, 0.38, 1)
+world_size = Vector3(0.32, 0.32, 0.32)
+
+[sub_resource type="Resource" id="Resource_foef8"]
+script = ExtResource("3_cpm2h")
+required_world_flag = &"laptop_frontrooms"
+text_key = &"PRO_LAPTOP_FRONTROOMS"
+
+[sub_resource type="Resource" id="Resource_xy2x8"]
+script = ExtResource("3_cpm2h")
+required_world_flag = &"laptop_arrived"
+text_key = &"PRO_LAPTOP_ARRIVED"
+
+[sub_resource type="Resource" id="Resource_v0pwn"]
+script = ExtResource("3_cpm2h")
+required_world_flag = &"laptop_survived"
+text_key = &"PRO_LAPTOP_SURVIVED"
+
+[sub_resource type="Resource" id="Resource_vnbtx"]
+script = ExtResource("1_1pa7m")
+id = &"work_laptop"
+display_name = "PRO_ITEM_WORK_LAPTOP"
+description_key = &"PRO_ITEM_WORK_LAPTOP_DESC"
+description_rules = Array[ExtResource("3_cpm2h")]([SubResource("Resource_foef8"), SubResource("Resource_xy2x8"), SubResource("Resource_v0pwn")])
+icon = ExtResource("10_8md7x")
+world_scene = ExtResource("11_brjrd")
+weight_kg = 2.7
+inventory_shape = Array[Vector2i]([Vector2i(0, 0), Vector2i(1, 0), Vector2i(2, 0), Vector2i(3, 0), Vector2i(0, 1), Vector2i(1, 1), Vector2i(2, 1), Vector2i(3, 1), Vector2i(0, 2), Vector2i(1, 2), Vector2i(2, 2), Vector2i(3, 2)])
+frontrooms_keepsake = true
+world_size = Vector3(0.36, 0.022, 0.25)
+
+[sub_resource type="Resource" id="Resource_jwmqe"]
+script = ExtResource("1_1pa7m")
+id = &"keys"
+display_name = "PRO_ITEM_KEYS"
+description_key = &"PRO_ITEM_KEYS_DESC"
+icon = ExtResource("12_ah5m3")
+world_scene = ExtResource("13_ubap7")
+weight_kg = 0.08
+inventory_shape = Array[Vector2i]([Vector2i(0, 0), Vector2i(1, 0)])
+frontrooms_keepsake = true
+world_size = Vector3(0.11, 0.025, 0.085)
+
+[sub_resource type="Resource" id="Resource_fdwiw"]
+script = ExtResource("1_1pa7m")
+id = &"wallet"
+display_name = "PRO_ITEM_WALLET"
+description_key = &"PRO_ITEM_WALLET_DESC"
+icon = ExtResource("14_bt564")
+world_scene = ExtResource("15_8j1wl")
+weight_kg = 0.16
+inventory_shape = Array[Vector2i]([Vector2i(0, 0), Vector2i(1, 0)])
+frontrooms_keepsake = true
+world_size = Vector3(0.11, 0.025, 0.085)
+
+[resource]
+script = ExtResource("16_v8pfh")
+definitions = Array[ExtResource("1_1pa7m")]([SubResource("Resource_fxeu0"), SubResource("Resource_ar22e"), SubResource("Resource_ex0yp"), SubResource("Resource_4j7e8"), SubResource("Resource_5v4eg"), SubResource("Resource_hcoia"), SubResource("Resource_0v6i7"), SubResource("Resource_vnbtx"), SubResource("Resource_jwmqe"), SubResource("Resource_fdwiw")])

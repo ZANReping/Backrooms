@@ -1,0 +1,107 @@
+keys,zh_CN,en
+PHONE_STATUS_LOCAL,4G,4G
+PHONE_STATUS_OFFLINE,离线,Offline
+PHONE_CLOSE,关闭手机,Close phone
+PHONE_BACK,返回,Back
+PHONE_HOME,主屏幕,Home
+PHONE_HOME_TITLE,主屏幕,Home
+PHONE_HOME_GREETING,早上好。今天的日程从办公室开始。,Good morning. Today's schedule begins at the office.
+PHONE_HOME_DATE,2026 年 10 月 18 日 · 星期日,Sunday · October 18 · 2026
+PHONE_APP_CHAT,聊天,Chat
+PHONE_APP_MAPS,地图,Maps
+PHONE_APP_BROWSER,浏览器,Browser
+PHONE_APP_PHONE,电话,Phone
+PHONE_APP_CAMERA,相机,Camera
+PHONE_APP_CLOCK,时钟,Clock
+PHONE_APP_WORKSPACE,公司工作台,Workplace
+PHONE_CHAT_COLLEAGUE,林倩 · 同事,Lin Qian · Colleague
+PHONE_CHAT_COLLEAGUE_PREVIEW,上午的表格别忘了带。,Remember the spreadsheet this morning.
+PHONE_CHAT_COLLEAGUE_1,林倩：早，上午的表格别忘了带。,Lin Qian: Morning. Remember the spreadsheet for this morning.
+PHONE_CHAT_COLLEAGUE_2,林倩：电梯最近又在检修，早点出门吧。,"Lin Qian: The elevator is being serviced again, so leave a little early."
+PHONE_CHAT_FRIEND,阿明 · 朋友,A-Ming · Friend
+PHONE_CHAT_FRIEND_PREVIEW,周末再约。,Let's meet this weekend.
+PHONE_CHAT_FRIEND_1,阿明：昨晚那家面馆还不错。,A-Ming: That noodle place last night was pretty good.
+PHONE_CHAT_FRIEND_2,我：周末再约。,Me: Let's meet this weekend.
+PHONE_CHAT_GROUP,项目小组,Project Group
+PHONE_CHAT_GROUP_PREVIEW,九点照常碰一下进度。,Usual nine o'clock progress check.
+PHONE_CHAT_GROUP_1,周工：九点照常碰一下进度。,Zhou: Usual nine o'clock progress check.
+PHONE_CHAT_GROUP_2,林倩：收到，我到了再发消息。,"Lin Qian: Got it, I'll message when I arrive."
+PHONE_CHAT_YOU,我的本地消息,My local messages
+PHONE_CHAT_PLACEHOLDER,输入消息（本地保存）,Type a message (saved locally)
+PHONE_CHAT_SEND,发送,Send
+PHONE_CHAT_SEARCH,搜索聊天,Search chats
+PHONE_CHAT_TIME_0741,07:41,07:41
+PHONE_CHAT_TIME_0718,07:18,07:18
+PHONE_CHAT_TIME_YESTERDAY,昨天,Yesterday
+PHONE_MESSAGE_SENT,已保存,Saved
+PHONE_MESSAGE_FAILED,离线未发送,Not sent — offline
+PHONE_NO_CHARGE,手机电量不足,Phone battery is empty
+PHONE_EMPTY_MESSAGE,请输入消息。,Enter a message.
+PHONE_MAP_ROUTE,步行约 12 分钟。沿榆树街向东，在河滨路转弯前经过售水点。,About 12 minutes on foot. Follow Elm Street east and pass the water kiosk before turning onto Riverside Road.
+PHONE_MAP_SEARCH,搜索地点,Search places
+PHONE_MAP_ROUTE_TITLE,前往办公楼,To Office
+PHONE_MAP_HOME,住宅,Home
+PHONE_MAP_HOME_DETAIL,榆树街 16 号,16 Elm Street
+PHONE_MAP_OFFICE,办公楼,Office
+PHONE_MAP_OFFICE_DETAIL,河滨路 42 号,42 Riverside Road
+PHONE_MAP_WATER,售水点,Water kiosk
+PHONE_MAP_WATER_DETAIL,榆树街与河滨路路口,Corner of Elm Street and Riverside Road
+PHONE_MAP_LOCATION_UNAVAILABLE,无法获取当前位置,Current location unavailable
+PHONE_BROWSER_LOCAL_NOTE,最近访问 · 离线缓存,Recent · Local cache
+PHONE_BROWSER_ADDRESS,输入网址或搜索,Enter address or search
+PHONE_BROWSER_LOCAL_ADDRESS,portal.yushu.cn,portal.yushu.cn
+PHONE_BROWSER_WEATHER_ADDRESS,weather.yushu.cn/today,weather.yushu.cn/today
+PHONE_BROWSER_COMMUTE_ADDRESS,transit.yushu.cn/commute,transit.yushu.cn/commute
+PHONE_BROWSER_NOTICE_ADDRESS,community.yushu.cn/notices,community.yushu.cn/notices
+PHONE_BROWSER_WEATHER,今日天气,Today's weather
+PHONE_BROWSER_WEATHER_BODY,"今天晴到多云，午后偏热。最高 29°C，微风。外出请带水。","Sunny to partly cloudy and warm this afternoon. High 29°C, light wind. Bring water when going out."
+PHONE_BROWSER_COMMUTE,通勤信息,Commute
+PHONE_BROWSER_COMMUTE_BODY,"榆树街沿线道路通畅。7:30—9:00 为早高峰，步行路线未受影响。","Roads around Elm Street are clear. Morning peak is 7:30–9:00; the walking route is unaffected."
+PHONE_BROWSER_NOTICE,社区公告,Community notice
+PHONE_BROWSER_NOTICE_BODY,"本周二上午进行水压检查。住户无需停水，请勿在公共走廊堆放杂物。","Water pressure checks take place Tuesday morning. No outage is expected. Please keep shared corridors clear."
+PHONE_BROWSER_REFRESH,刷新,Refresh
+PHONE_BROWSER_REFRESHED,页面已刷新,Page refreshed
+PHONE_BROWSER_CONNECTION_FAILED,无法连接网络，仍显示上次载入的页面。,Can't connect. Showing the last loaded page.
+PHONE_CONTACTS,通讯录,Contacts
+PHONE_RECENTS,最近通话,Recent calls
+PHONE_CONTACT_HOME,家,Home
+PHONE_CONTACT_MING,阿明,A-Ming
+PHONE_CONTACT_OFFICE,公司前台,Office reception
+PHONE_CALL_YESTERDAY,昨天 18:42,Yesterday 18:42
+PHONE_CALL_MONDAY,周一 09:06,Monday 09:06
+PHONE_CALL_UNAVAILABLE,暂时无法接通。,Unable to connect right now.
+PHONE_CAMERA_WAITING,正在等待相机画面……,Waiting for the camera view…
+PHONE_CAMERA_CAPTURE,拍摄,Capture
+PHONE_CAMERA_GALLERY,相册,Gallery
+PHONE_CAMERA_EMPTY,还没有照片。,No photos yet.
+PHONE_CAMERA_PHOTO,照片,Photo
+PHONE_CAMERA_VIEW_PHOTO,查看照片,View photo
+PHONE_CAMERA_FILE_MISSING,无法读取这张照片。,This photo could not be read.
+PHONE_CAMERA_IMAGE_UNAVAILABLE,缩略图尚未载入；点按可打开照片。,Thumbnail not loaded; select to open the photo.
+PHONE_CAMERA_SELECTED,正在查看,Viewing
+PHONE_CLOCK_ALARM,闹钟,Alarm
+PHONE_CLOCK_WEEKDAYS,工作日,Weekdays
+PHONE_CLOCK_READ_ONLY,已开启 · 只读,On · Read only
+PHONE_CLOCK_DEVICE_TIME,时间与日程由手机自动同步。,Time and schedule are synced automatically.
+PHONE_WORKSPACE_EMPLOYEE,员工编号,Employee ID
+PHONE_WORKSPACE_STATUS_OK,今日状态：正常。上午到办公室后查看项目进度。,Today's status: normal. Review project progress after arriving at the office.
+PHONE_WORKSPACE_LOGIN_EXPIRED,登录信息已失效,Sign-in information expired
+PHONE_WORKSPACE_EXPIRED_BODY,本机保存的公司登录信息已过期。请重新登记身份后继续使用。这通常发生在密码策略更新后。,The workplace sign-in stored on this phone has expired. Register your identity again to continue. This commonly happens after a password policy update.
+PHONE_WORKSPACE_REGISTER,重新登记,Register again
+PHONE_REGISTER_TITLE,身份登记,Identity registration
+PHONE_REGISTER_NOTE,公司与职位将自动登记。请核对姓名、生日和个人形象。,Company and role are assigned automatically. Review your name, birthday, and appearance.
+PHONE_REGISTER_SURNAME,姓,Surname
+PHONE_REGISTER_GIVEN_NAME,名,Given name
+PHONE_REGISTER_BIRTHDAY,生日（年 / 月 / 日）,Date of birth (year / month / day)
+PHONE_REGISTER_GENDER,性别,Gender
+PHONE_GENDER_MALE,男,Male
+PHONE_GENDER_FEMALE,女,Female
+PHONE_GENDER_UNSPECIFIED,不说明,Prefer not to say
+PHONE_APPEARANCE_SKIN,肤色,Skin tone
+PHONE_APPEARANCE_BODY,体型,Body type
+PHONE_APPEARANCE_HAIR,发型,Hair style
+PHONE_APPEARANCE_HAIR_COLOR,发色,Hair color
+PHONE_APPEARANCE_FACE,面部,Face
+PHONE_APPEARANCE_EDIT,编辑形象,Edit appearance
+PHONE_PRESET,预设,Preset
+PHONE_REGISTER_SUBMIT,提交登记,Submit registration

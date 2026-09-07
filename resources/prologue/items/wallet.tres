@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemDefinition" format=3]
+
+[ext_resource type="Script" path="res://core/items/item_description_rule.gd" id="1_ifayb"]
+[ext_resource type="Texture2D" path="res://assets/prologue/icons/wallet.png" id="2_cb758"]
+[ext_resource type="Script" path="res://core/items/item_definition.gd" id="3_lu3kd"]
+[ext_resource type="PackedScene" path="res://art/prologue/props/wallet.tscn" id="4_x1ji8"]
+
+[resource]
+script = ExtResource("3_lu3kd")
+id = &"wallet"
+display_name = "PRO_ITEM_WALLET"
+description_key = &"PRO_ITEM_WALLET_DESC"
+icon = ExtResource("2_cb758")
+world_scene = ExtResource("4_x1ji8")
+weight_kg = 0.16
+inventory_shape = Array[Vector2i]([Vector2i(0, 0), Vector2i(1, 0)])
+frontrooms_keepsake = true
+world_size = Vector3(0.11, 0.025, 0.085)

@@ -1,0 +1,47 @@
+keys,zh_CN,en
+INVENTORY_TITLE,背包与装备,Inventory & Equipment
+INVENTORY_CLOSE,关闭,Close
+INVENTORY_BACK,返回,Back
+INVENTORY_ROOT,背包,Backpack
+INVENTORY_NO_CONTAINER_TITLE,未装备背包,No Container Equipped
+INVENTORY_NO_CONTAINER,背部槽没有可用容器。装备背包后才能存放物品。,No usable container is equipped on the back slot. Equip a bag to store items.
+INVENTORY_WEIGHT,负重 %.1f / %.1f kg,Weight %.1f / %.1f kg
+INVENTORY_EQUIPMENT,装备栏,Equipment
+INVENTORY_SHOW_EQUIPMENT,返回装备,Equipment
+INVENTORY_DETAILS,物品详情,Item Details
+INVENTORY_NO_SELECTION,未选择物品,No Item Selected
+INVENTORY_SELECT_HINT,选择格子中的物品或装备槽以查看详情。,Select an item in the grid or an equipment slot to inspect it.
+INVENTORY_ACTION_HINT_NO_SELECTION,点击选择，再次点击取消；长按拖动，拖动时按 R 旋转。,"Select an item to equip, use, or drop it; drag to move and press R to rotate."
+INVENTORY_ACTION_HINT_SELECTED,再次点击取消选择；长按物品后拖动，按 R 旋转。,Drag the item to move it; press R while dragging to rotate.
+INVENTORY_EQUIP_TARGET_NO_SELECTION_HINT,选择物品后才能选择目标槽位。,Select an item before choosing an equipment slot.
+INVENTORY_EQUIP_NO_SELECTION_HINT,选择物品后才能装备。,Select an item before equipping it.
+INVENTORY_USE_NO_SELECTION_HINT,选择物品后才能使用。,Select an item before using it.
+INVENTORY_DROP_NO_SELECTION_HINT,选择物品后才能丢弃。,Select an item before dropping it.
+INVENTORY_CANNOT_EQUIP_HINT,此物品没有可用的装备槽位，不能装备。,This item has no compatible equipment slot and cannot be equipped.
+INVENTORY_CANNOT_USE_HINT,此物品没有可用的使用动作。,This item has no available use action.
+INVENTORY_EQUIP_TARGET_HINT,选择要装备到的目标槽位。,Choose the equipment slot for this item.
+INVENTORY_EQUIP_HINT,将物品装备到所选槽位。,Equip the item in the selected slot.
+INVENTORY_USE_HINT,使用所选物品。,Use the selected item.
+INVENTORY_DROP_HINT,将所选物品丢到当前世界。,Drop the selected item into the current world.
+INVENTORY_BACK_HINT,返回上一级容器。,Return to the parent container.
+INVENTORY_BACK_ROOT_HINT,已经位于最外层容器。,You are already at the outermost container.
+INVENTORY_EMPTY_SLOT,空,Empty
+INVENTORY_SLOT_HINT,点击选择，再次点击取消；长按并拖入背包可卸下。,Select an equipped item; place it in the grid to stow it.
+INVENTORY_EQUIP,装备,Equip
+INVENTORY_OPEN,打开容器,Open Container
+INVENTORY_USE,使用,Use
+INVENTORY_DROP,丢弃,Drop
+INVENTORY_CONDITION,状态 %.0f%%,Condition %.0f%%
+INVENTORY_ITEM_WEIGHT,重量 %.2f kg,Weight %.2f kg
+INVENTORY_CHARGE,电量 %.0f / %.0f,Charge %.0f / %.0f
+INVENTORY_CONTENTS,内容 %.1f / %.1f %s,Contents %.1f / %.1f %s
+INVENTORY_SLOT_HEAD,头部,Head
+INVENTORY_SLOT_FACE,面部,Face
+INVENTORY_SLOT_TORSO,躯干,Torso
+INVENTORY_SLOT_LEGS,腿部,Legs
+INVENTORY_SLOT_FEET,足部,Feet
+INVENTORY_SLOT_BACK,背部,Back
+INVENTORY_SLOT_PRIMARY_HAND,主手,Primary Hand
+INVENTORY_SLOT_SECONDARY_HAND,副手,Secondary Hand
+INVENTORY_SLOT_ACCESSORY_1,饰品 1,Accessory 1
+INVENTORY_SLOT_ACCESSORY_2,饰品 2,Accessory 2

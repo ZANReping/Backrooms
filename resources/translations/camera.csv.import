@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://bb1q83rtekfr1"
+
+[deps]
+
+files=["res://resources/translations/camera.zh_CN.translation", "res://resources/translations/camera.en.translation"]
+
+source_file="res://resources/translations/camera.csv"
+dest_files=["res://resources/translations/camera.zh_CN.translation", "res://resources/translations/camera.en.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

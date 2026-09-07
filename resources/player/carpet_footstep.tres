@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="AudioProfile" load_steps=2 format=3]
+[ext_resource type="Script" path="res://resources/player/audio_profile.gd" id="1"]
+[resource]
+script = ExtResource("1")
+surface_id = &"carpet"
+duration_seconds = 0.11
+body_frequency_hz = 72.0
+noise_amount = 0.78
+decay = 7.0
+seed = 2909
+volume_db = -22.0

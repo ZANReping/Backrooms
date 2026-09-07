@@ -1,0 +1,58 @@
+﻿{
+    "schema":  1,
+    "id":  "white_plaster_02",
+    "name":  "White Plaster 02",
+    "kind":  "texture",
+    "status":  "DOWNLOADED_UNVERIFIED",
+    "source_page":  "https://polyhaven.com/a/white_plaster_02",
+    "api_files":  "https://api.polyhaven.com/files/white_plaster_02",
+    "authors":  {
+                    "name":  "Rob Tuytel",
+                    "role":  "All"
+                },
+    "published_utc":  "2018-07-11",
+    "retrieved_utc":  "2026-09-07",
+    "license":  "CC0 1.0 Universal",
+    "license_url":  "https://polyhaven.com/license",
+    "attribution_required":  false,
+    "maps":  {
+                 "color":  {
+                               "api_key":  "Diffuse",
+                               "resolution":  "2k",
+                               "format":  "jpg"
+                           },
+                 "normal":  {
+                                "api_key":  "nor_gl",
+                                "resolution":  "1k",
+                                "format":  "jpg"
+                            },
+                 "packed_arm":  {
+                                    "api_key":  "arm",
+                                    "resolution":  "1k",
+                                    "format":  "jpg"
+                                }
+             },
+    "files":  [
+                  {
+                      "path":  "assets/third_party/polyhaven/textures/white_plaster_02/white_plaster_02_diff_2k.jpg",
+                      "url":  "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/white_plaster_02/white_plaster_02_diff_2k.jpg",
+                      "bytes":  2568315,
+                      "api_md5":  "35f9c96c16aa0d934da7884b232f6d07",
+                      "sha256":  "0ca5245ba70777d3e41ff4566c9f8d363855461891802c55cb7dc0f6f85f084e"
+                  },
+                  {
+                      "path":  "assets/third_party/polyhaven/textures/white_plaster_02/white_plaster_02_nor_gl_1k.jpg",
+                      "url":  "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/white_plaster_02/white_plaster_02_nor_gl_1k.jpg",
+                      "bytes":  652310,
+                      "api_md5":  "55fc03203ebf1dc703a380fde93ff502",
+                      "sha256":  "eb572ca3630d5bfde72e2601b1f02412da23ca005cd19384dced8690be4cb783"
+                  },
+                  {
+                      "path":  "assets/third_party/polyhaven/textures/white_plaster_02/white_plaster_02_arm_1k.jpg",
+                      "url":  "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/white_plaster_02/white_plaster_02_arm_1k.jpg",
+                      "bytes":  191017,
+                      "api_md5":  "4a5a080e2421fac4fa602680bef4c8b1",
+                      "sha256":  "2bb1115821715dfd8bbd1c5a294a5bb43b97d5c46b1aa8aa8f744bcaf5eeeb10"
+                  }
+              ]
+}

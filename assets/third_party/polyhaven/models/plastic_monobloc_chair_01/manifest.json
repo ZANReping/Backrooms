@@ -1,0 +1,57 @@
+﻿{
+    "schema":  1,
+    "id":  "plastic_monobloc_chair_01",
+    "name":  "Plastic Monobloc Chair 01",
+    "kind":  "model",
+    "status":  "DOWNLOADED_UNVERIFIED",
+    "source_page":  "https://polyhaven.com/a/plastic_monobloc_chair_01",
+    "api_files":  "https://api.polyhaven.com/files/plastic_monobloc_chair_01",
+    "authors":  {
+                    "name":  "Kuutti Siitonen",
+                    "role":  "All"
+                },
+    "published_utc":  "2022-11-14",
+    "retrieved_utc":  "2026-09-07",
+    "license":  "CC0 1.0 Universal",
+    "license_url":  "https://polyhaven.com/license",
+    "attribution_required":  false,
+    "resolution":  "1k",
+    "root_origin_and_coordinates":  "UNVERIFIED_IN_GODOT",
+    "files":  [
+                  {
+                      "path":  "assets/third_party/polyhaven/models/plastic_monobloc_chair_01/plastic_monobloc_chair_01_1k.gltf",
+                      "url":  "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/plastic_monobloc_chair_01/plastic_monobloc_chair_01_1k.gltf",
+                      "bytes":  2892,
+                      "api_md5":  "b0ac94e52b406e1815af47d9d84eadb4",
+                      "sha256":  "899bf148139ab8d1718c25ec06112a652631f9476b5aaeeacb9eb1da9b7f1d3a"
+                  },
+                  {
+                      "path":  "assets/third_party/polyhaven/models/plastic_monobloc_chair_01/plastic_monobloc_chair_01.bin",
+                      "url":  "https://dl.polyhaven.org/file/ph-assets/Models/gltf/4k/plastic_monobloc_chair_01/plastic_monobloc_chair_01.bin",
+                      "bytes":  124808,
+                      "api_md5":  "cff97136a9c4bb57c62937cbb7d33a79",
+                      "sha256":  "db5c778488d01d7e7d3409e2cda53ee8f6dd523a327c080000d549dd0f83b375"
+                  },
+                  {
+                      "path":  "assets/third_party/polyhaven/models/plastic_monobloc_chair_01/textures/plastic_monobloc_chair_01_arm_1k.jpg",
+                      "url":  "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/plastic_monobloc_chair_01/plastic_monobloc_chair_01_arm_1k.jpg",
+                      "bytes":  634320,
+                      "api_md5":  "ce9271797fd8893a6c84f639f952d0b9",
+                      "sha256":  "78a67659a19a9df9efc0ef71789de0c949a727db62ade4c4c8887cd2c803c1a2"
+                  },
+                  {
+                      "path":  "assets/third_party/polyhaven/models/plastic_monobloc_chair_01/textures/plastic_monobloc_chair_01_diff_1k.jpg",
+                      "url":  "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/plastic_monobloc_chair_01/plastic_monobloc_chair_01_diff_1k.jpg",
+                      "bytes":  560823,
+                      "api_md5":  "c36dfe0f38d6ca1632ba426c598e6764",
+                      "sha256":  "fdd1255a02bf684cfcff2eae75c0e3eea0db1fb5ecbfbd8c4f9beab8fd83ff6c"
+                  },
+                  {
+                      "path":  "assets/third_party/polyhaven/models/plastic_monobloc_chair_01/textures/plastic_monobloc_chair_01_nor_gl_1k.jpg",
+                      "url":  "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/plastic_monobloc_chair_01/plastic_monobloc_chair_01_nor_gl_1k.jpg",
+                      "bytes":  630024,
+                      "api_md5":  "387f81f09c0754416298398277fb2a6d",
+                      "sha256":  "9ffa876b37d72ae1c0aed84d4dc1f62c956c844b3efec1f786f9080c10f63c9e"
+                  }
+              ]
+}

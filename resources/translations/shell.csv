@@ -1,0 +1,60 @@
+keys,zh_CN,en
+SHELL_TITLE,后室,Backrooms
+SHELL_START_PROMPT,选择难度开始灰盒测试,Choose a difficulty to start the graybox test
+SHELL_CASUAL,休闲,Casual
+SHELL_HARDCORE,硬核,Hardcore
+SHELL_EXTREME,极限,Extreme
+SHELL_RESUME,继续,Resume
+SHELL_SAVE,保存,Save
+SHELL_MANUAL_SAVE_DISABLED,此难度不允许手动保存,Manual saving is unavailable at this difficulty
+SHELL_LOAD_DISABLED,没有可读取的存档,No saved game is available
+SHELL_LOAD,读取,Load
+SHELL_RETURN_MENU,返回菜单,Return to Menu
+SHELL_IMMERSIVE_HUD,沉浸 HUD,Immersive HUD
+SHELL_HEADBOB,轻微头部晃动,Subtle Headbob
+SHELL_INTERACT,交互,Interact
+SHELL_STAT_HEALTH,健康,Health
+SHELL_STAT_STAMINA,体力,Stamina
+SHELL_STAT_HUNGER,饥饿,Hunger
+SHELL_STAT_THIRST,口渴,Thirst
+SHELL_STAT_SANITY,理智,Sanity
+SHELL_STAT_FATIGUE,疲劳,Fatigue
+SHELL_ICON_BATTERY_HINT,手机电量,Phone battery
+SHELL_ICON_OFFLINE_HINT,当前离线,Currently offline
+SHELL_DEBUG_TITLE,调试面板,Debug Panel
+SHELL_DEBUG_SCENE,场景,Scene
+SHELL_DEBUG_POSITION,位置,Position
+SHELL_DEBUG_FPS,帧率,FPS
+SHELL_DEBUG_SEED,种子,Seed
+SHELL_DEBUG_FLAGS,标记,Flags
+SHELL_DEBUG_STATS,属性,Stats
+SHELL_DEBUG_WEIGHT,重量,Weight
+SHELL_DEBUG_ITEM,物品 ID,Item ID
+SHELL_DEBUG_GIVE,给予物品,Give Item
+SHELL_DEBUG_RELOAD,重载房间,Reload Room
+SHELL_DEBUG_TRAVEL,测试另一个灰盒,Test Other Graybox
+SHELL_DEBUG_DAMAGE,健康归零,Set Health to Zero
+SHELL_DEBUG_FUTURE,Chunk 与事件详情将在 M3 接入,Chunk and event details arrive in M3
+SHELL_DEAD_TITLE,你死了,You Died
+SHELL_DEATH_CAUSE,死因,Cause
+SHELL_LOAD_RECENT,读取最近存档,Load Recent Save
+SHELL_NO_REVIVE,极限难度无法读取存档,No save loading in Extreme
+SHELL_PHONE_TITLE,手机,Phone
+SHELL_PHONE_CHARGE,电量,Charge
+SHELL_PHONE_CHAT,聊天,Chat
+SHELL_PHONE_MAPS,地图,Maps
+SHELL_PHONE_BROWSER,浏览器,Browser
+SHELL_PHONE_CALLS,电话,Phone
+SHELL_PHONE_CAMERA,相机,Camera
+SHELL_PHONE_CLOCK,时钟,Clock
+SHELL_PHONE_LATER,M2 后续开发,M2 — coming later
+SHELL_PHONE_OFFLINE,离线本地记录,Offline local record
+SHELL_PHONE_EMPTY,还没有消息,No messages yet
+SHELL_PHONE_INPUT,输入消息（最多 1000 字）…,Type a message (up to 1000 characters)…
+SHELL_PHONE_SEND,发送,Send
+SHELL_PHONE_NO_CHARGE,电量耗尽，无法发送,No charge — cannot send
+SHELL_PHONE_NO_REPLY,消息仅保存在本机；不保证回复,Messages stay on this device; replies are not guaranteed
+SHELL_PHONE_STATUS_SENT,已记录,Recorded
+SHELL_PHONE_STATUS_PENDING,等待中,Pending
+SHELL_PHONE_STATUS_FAILED,离线未发送,Not sent — offline
+SHELL_CLOSE,关闭,Close

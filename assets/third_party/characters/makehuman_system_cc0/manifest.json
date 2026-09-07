@@ -1,0 +1,24 @@
+{
+  "status": "CC0_SOURCE_COMPONENTS_REQUIRING_FIT_AND_RIG_CONVERSION",
+  "source_pack": "MakeHuman system assets",
+  "source_url": "https://files.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip",
+  "catalog_url": "https://static.makehumancommunity.org/assets/assetpacks/makehuman_system_assets.html",
+  "catalog_license": "CC0",
+  "license_evidence": "Every retained OBJ, MHCLO, or MHMAT text file states that the asset was explicitly released as CC0 in September 2020 and identifies Data Collection AB, Joel Palmius, and Jonas Hauquier as copyright holders. Each binary texture is retained beside its corresponding CC0 material or clothes record.",
+  "compatibility": {
+    "basemesh": "hm08",
+    "candidate_human_alignment": "Initial rest-pose alignment is approximately uniform scale 0.1 and +0.82 m on Y. Calibrate visually before production.",
+    "skin_uv": "Expected compatible MakeHuman hm08 UV; verify on candidate body before selecting as default.",
+    "hair": "OBJ is unrigged. Attach to the head bone after conversion or use as a rest-pose evaluation mesh.",
+    "shoes": "OBJ is unrigged. The retained MHCLO references a MakeHuman MHW weight file, but the MHW is not a Godot skin. Offline fitting and skin conversion are required before animated use."
+  },
+  "assets": [
+    {"id": "skin_young_caucasian_male", "files": ["skin/young_lightskinned_male_diffuse.png", "skin/young_caucasian_male.LICENSE-EVIDENCE.mhmat"]},
+    {"id": "eyes_brown", "files": ["eyes/brown_eye.png", "eyes/brown.LICENSE-EVIDENCE.mhmat"]},
+    {"id": "hair_short01", "files": ["short01/short01.obj", "short01/short01_diffuse.png", "short01/short01.LICENSE-EVIDENCE.mhclo", "short01/short01.LICENSE-EVIDENCE.mhmat"]},
+    {"id": "hair_bob01", "files": ["bob01/bob01.obj", "bob01/bob01_diffuse.png", "bob01/bob01.LICENSE-EVIDENCE.mhclo", "bob01/bob01.LICENSE-EVIDENCE.mhmat"]},
+    {"id": "hair_ponytail01", "files": ["ponytail01/ponytail01.obj", "ponytail01/ponytail01_diffuse.png", "ponytail01/ponytail01.LICENSE-EVIDENCE.mhclo", "ponytail01/ponytail01.LICENSE-EVIDENCE.mhmat"]},
+    {"id": "shoes01", "files": ["shoes01/shoes01.obj", "shoes01/shoes01_diffuse.png", "shoes01/shoes01_normal.png", "shoes01/shoes01.LICENSE-EVIDENCE.mhclo", "shoes01/shoes01.LICENSE-EVIDENCE.mhmat"]}
+  ]
+}
+

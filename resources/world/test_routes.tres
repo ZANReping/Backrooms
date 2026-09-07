@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="RouteCatalog" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://core/world/route_catalog.gd" id="1"]
+[ext_resource type="Script" path="res://core/world/route_definition.gd" id="2"]
+
+[sub_resource type="Resource" id="A"]
+script = ExtResource("2")
+id = &"test_room_a"
+display_name = "ROOM_A"
+scene_path = "res://levels/test_rooms/test_room_a.tscn"
+
+[sub_resource type="Resource" id="B"]
+script = ExtResource("2")
+id = &"test_room_b"
+display_name = "ROOM_B"
+scene_path = "res://levels/test_rooms/test_room_b.tscn"
+
+[resource]
+script = ExtResource("1")
+routes = Array[ExtResource("2")]([SubResource("A"), SubResource("B")])

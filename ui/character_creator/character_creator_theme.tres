@@ -1,0 +1,113 @@
+[gd_resource type="Theme" load_steps=8 format=3]
+
+[sub_resource type="StyleBoxFlat" id="Panel"]
+bg_color = Color(0.055, 0.06, 0.063, 0.98)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.22, 0.235, 0.24, 0.9)
+content_margin_left = 12.0
+content_margin_top = 12.0
+content_margin_right = 12.0
+content_margin_bottom = 12.0
+
+[sub_resource type="StyleBoxFlat" id="Grid"]
+bg_color = Color(0.035, 0.039, 0.041, 0.96)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.19, 0.205, 0.21, 0.85)
+content_margin_left = 12.0
+content_margin_top = 12.0
+content_margin_right = 12.0
+content_margin_bottom = 12.0
+
+[sub_resource type="StyleBoxFlat" id="Button"]
+bg_color = Color(0.075, 0.08, 0.083, 0.96)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.24, 0.255, 0.26, 0.9)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+content_margin_left = 10.0
+content_margin_top = 7.0
+content_margin_right = 10.0
+content_margin_bottom = 7.0
+
+[sub_resource type="StyleBoxFlat" id="Hover"]
+bg_color = Color(0.12, 0.13, 0.134, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.43, 0.47, 0.48, 0.95)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+content_margin_left = 10.0
+content_margin_top = 7.0
+content_margin_right = 10.0
+content_margin_bottom = 7.0
+
+[sub_resource type="StyleBoxFlat" id="Pressed"]
+bg_color = Color(0.16, 0.18, 0.185, 1)
+border_width_left = 2
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.58, 0.65, 0.66, 0.95)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+content_margin_left = 9.0
+content_margin_top = 7.0
+content_margin_right = 10.0
+content_margin_bottom = 7.0
+
+[sub_resource type="StyleBoxFlat" id="Focus"]
+bg_color = Color(0, 0, 0, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.68, 0.78, 0.79, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="Scroll"]
+bg_color = Color(0.16, 0.17, 0.175, 0.75)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[resource]
+default_font_size = 15
+Button/colors/font_color = Color(0.84, 0.86, 0.86, 1)
+Button/colors/font_disabled_color = Color(0.45, 0.47, 0.47, 0.75)
+Button/styles/normal = SubResource("Button")
+Button/styles/hover = SubResource("Hover")
+Button/styles/pressed = SubResource("Pressed")
+Button/styles/focus = SubResource("Focus")
+Label/colors/font_color = Color(0.82, 0.84, 0.84, 1)
+OptionButton/colors/font_color = Color(0.84, 0.86, 0.86, 1)
+OptionButton/styles/normal = SubResource("Button")
+VScrollBar/styles/scroll = SubResource("Scroll")
+VScrollBar/styles/grabber = SubResource("Hover")
+VScrollBar/styles/grabber_highlight = SubResource("Pressed")
+SidePanel/base_type = &"PanelContainer"
+SidePanel/styles/panel = SubResource("Panel")
+DetailsPanel/base_type = &"PanelContainer"
+DetailsPanel/styles/panel = SubResource("Panel")
+GridSurface/base_type = &"PanelContainer"
+GridSurface/styles/panel = SubResource("Grid")

@@ -1,0 +1,58 @@
+﻿{
+    "schema":  1,
+    "id":  "decrepit_wallpaper",
+    "name":  "Decrepit Wallpaper",
+    "kind":  "texture",
+    "status":  "DOWNLOADED_UNVERIFIED",
+    "source_page":  "https://polyhaven.com/a/decrepit_wallpaper",
+    "api_files":  "https://api.polyhaven.com/files/decrepit_wallpaper",
+    "authors":  {
+                    "name":  "Rob Tuytel",
+                    "role":  "All"
+                },
+    "published_utc":  "2024-10-01",
+    "retrieved_utc":  "2026-09-07",
+    "license":  "CC0 1.0 Universal",
+    "license_url":  "https://polyhaven.com/license",
+    "attribution_required":  false,
+    "maps":  {
+                 "color":  {
+                               "api_key":  "Diffuse",
+                               "resolution":  "2k",
+                               "format":  "jpg"
+                           },
+                 "normal":  {
+                                "api_key":  "nor_gl",
+                                "resolution":  "1k",
+                                "format":  "jpg"
+                            },
+                 "packed_arm":  {
+                                    "api_key":  "arm",
+                                    "resolution":  "1k",
+                                    "format":  "jpg"
+                                }
+             },
+    "files":  [
+                  {
+                      "path":  "assets/third_party/polyhaven/textures/decrepit_wallpaper/decrepit_wallpaper_diff_2k.jpg",
+                      "url":  "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/decrepit_wallpaper/decrepit_wallpaper_diff_2k.jpg",
+                      "bytes":  3325490,
+                      "api_md5":  "6d8cef16eecb7b4c84d77008ffc375b5",
+                      "sha256":  "6a16d2c30016b98cce1176e85c64075fe48255d0302e7d7b9f71198fbe818cf1"
+                  },
+                  {
+                      "path":  "assets/third_party/polyhaven/textures/decrepit_wallpaper/decrepit_wallpaper_nor_gl_1k.jpg",
+                      "url":  "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/decrepit_wallpaper/decrepit_wallpaper_nor_gl_1k.jpg",
+                      "bytes":  691701,
+                      "api_md5":  "1f8002bef047744e4d27e2f998e6caa2",
+                      "sha256":  "dcb75f00c055b23f82250ef5c7ced71a5e28e197a563ff69011d8deb2c45a83c"
+                  },
+                  {
+                      "path":  "assets/third_party/polyhaven/textures/decrepit_wallpaper/decrepit_wallpaper_arm_1k.jpg",
+                      "url":  "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/decrepit_wallpaper/decrepit_wallpaper_arm_1k.jpg",
+                      "bytes":  470742,
+                      "api_md5":  "35cff245dfdd5f671745926e0ad1c387",
+                      "sha256":  "2649a9978007cf3ba1437d8d1f7b478f71ac02bbcaf213e9704ac5675e74b6f4"
+                  }
+              ]
+}

@@ -1,0 +1,57 @@
+﻿{
+    "schema":  1,
+    "id":  "metal_office_desk",
+    "name":  "Metal Office Desk",
+    "kind":  "model",
+    "status":  "DOWNLOADED_UNVERIFIED",
+    "source_page":  "https://polyhaven.com/a/metal_office_desk",
+    "api_files":  "https://api.polyhaven.com/files/metal_office_desk",
+    "authors":  {
+                    "name":  "Ulan Cabanilla",
+                    "role":  "All"
+                },
+    "published_utc":  "2026-03-20",
+    "retrieved_utc":  "2026-09-07",
+    "license":  "CC0 1.0 Universal",
+    "license_url":  "https://polyhaven.com/license",
+    "attribution_required":  false,
+    "resolution":  "1k",
+    "root_origin_and_coordinates":  "UNVERIFIED_IN_GODOT",
+    "files":  [
+                  {
+                      "path":  "assets/third_party/polyhaven/models/metal_office_desk/metal_office_desk_1k.gltf",
+                      "url":  "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/metal_office_desk/metal_office_desk_1k.gltf",
+                      "bytes":  13510,
+                      "api_md5":  "723956efef6da35ad41494efa5c3b820",
+                      "sha256":  "f07032a5ee89aacceebf10fd9fa192c22775ae81861cfb0bdb1594497179373c"
+                  },
+                  {
+                      "path":  "assets/third_party/polyhaven/models/metal_office_desk/textures/metal_office_desk_nor_gl_1k.jpg",
+                      "url":  "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/metal_office_desk/metal_office_desk_nor_gl_1k.jpg",
+                      "bytes":  170875,
+                      "api_md5":  "bcf6793df61d9b5f097f2b9518866c45",
+                      "sha256":  "f57eb004937e46392151b803e0cb1d88983958d01ad11d93df78a82cfcc6c407"
+                  },
+                  {
+                      "path":  "assets/third_party/polyhaven/models/metal_office_desk/textures/metal_office_desk_diff_1k.jpg",
+                      "url":  "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/metal_office_desk/metal_office_desk_diff_1k.jpg",
+                      "bytes":  470831,
+                      "api_md5":  "6a27263c95811fa902ddea6476d610e9",
+                      "sha256":  "1f02e3e77e8f82a3600664c991bd45c1c187452d61e9ede4336c6f90f7fa3139"
+                  },
+                  {
+                      "path":  "assets/third_party/polyhaven/models/metal_office_desk/textures/metal_office_desk_arm_1k.jpg",
+                      "url":  "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/metal_office_desk/metal_office_desk_arm_1k.jpg",
+                      "bytes":  721614,
+                      "api_md5":  "fb76b1e17f07592608d3f144fce4bfce",
+                      "sha256":  "752916dd9bf8a163dc7e0d3673900791ee6d558bbe23894263ac92b42387f51b"
+                  },
+                  {
+                      "path":  "assets/third_party/polyhaven/models/metal_office_desk/metal_office_desk.bin",
+                      "url":  "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/metal_office_desk/metal_office_desk.bin",
+                      "bytes":  229700,
+                      "api_md5":  "96f258b9a64d36ca011f44de23da7c65",
+                      "sha256":  "65b558f41a75ad4822e31cc2a97eb34ed359199279a6bfbd650deb27cef78767"
+                  }
+              ]
+}

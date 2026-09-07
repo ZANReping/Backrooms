@@ -1,0 +1,18 @@
+{
+  "mesh": "body",
+  "count": 188,
+  "names": [
+    "african", "asian", "caucasian", "man", "woman1", "woman2", "zombie", "old", "child", "skinny", "fat", "muscle",
+    "breast1", "breast2", "breast3", "breast_pam1", "breast_pam2", "breast_pam3", "breast_pam4_+", "breast_pam4_-",
+    "armmuscle", "armfat", "legmuscle", "legfat", "stomach+", "stomach-", "pregnancy", "navel+", "navel-", "navel_move",
+    "torso_pam1_+", "torso_pam1_-", "torso_pam2_+", "torso_pam2_-", "torso_pam3_+", "torso_pam3_-", "torso_pam4_+", "torso_pam4_-", "torso_pam5_+", "torso_pam5_-", "torso_pam6", "torso_pam7", "torso_pam8_+", "torso_pam8_-", "torso_pam9_+", "torso_pam9_-", "butt_cast", "butt_pam1_+", "butt_pam1_-", "double_neck", "neck_scale_XY",
+    "head_young", "head_oval", "head_circle", "head_quad", "head_inv_tris", "head_tris", "head_visok_+", "head _visok_-", "head_scale_X", "head_scale_Y", "head_scale_Z", "head_pam1_+", "head_pam1_-", "head_pam2_+", "head_pam_2_-", "head_pam_3_+", "head_pam_3_-", "head_pam_4_+", "head_pam_4_-", "head_pam_5_+", "head_pam_5_-",
+    "jaw_pam1_+", "jaw_pam1_-", "jaw_pam2", "jaw_pam3_+", "jaw_pam3_-", "jaw_pam4_+", "jaw_pam4_-", "jaw_pam5_+", "jaw_pam5_-", "jaw_pam6_+", "jaw_pam6_-", "jaw_pam7_+", "jaw_pam7_-",
+    "nose_scale_X", "nose_scale_Y", "nose_scale_Z", "nose_move_Y_+", "nose_move_Y_-", "nose_move_Z_+", "nose_move_Z_-", "nose_scale_3_+", "nose_scale_3_-", "nose_scale_2_+", "nose_scale_2_-", "nose_scale_1_+", "nose_scale_1_-", "nose_pam1_+", "nose_pam1_-", "nose_pam2_+", "nose_pam2_-", "nose_pam3_+", "nose_pam3_-", "nose_pam4_+", "nose_pam4_-", "nose_pam5", "nose_pam6_+", "nose_pam6_-",
+    "cheek_pam1_+", "cheek_pam1_-", "cheek_pam2_+", "cheek_pam3_+", "cheek_pam4+", "cheek_pam4_-",
+    "eye_pam1", "eye_pam2_+", "eye_pam2_-", "eye_pam3_+", "eye_pam4_-", "eye_pam5_+", "eye_pam5_-", "eye_pam6_+", "eye_pam6_-", "eye_pam_7_+", "eye_pam_7_-", "eye_pam_8_+", "eye_pam_8_-", "eye_pam_9_+", "eye_pam_9_-", "eye_pam10_+", "eye_pam10_-", "eye_pam11_+", "eye_pam11_-", "eye_pam12_+", "eye_pam12_-", "eye_pam13_+", "eye_pam13_-", "eye_pam14_+", "eye_pam14_-", "eye_pam15_+", "eye_pam15_-",
+    "lips_pam1_+", "lips_pam1_-", "lips_pam2_+", "lips_pam2_-", "lips_pam3_+", "lips_pam3_-", "lips_pam4_+", "lips_pam4_-", "lips_pam5_+", "lips_pam5_-", "lips_scale_X_+", "lips_scale_X_-", "lips_scale_Y_+", "lips_scale_Y_-", "lips_scale_Z_+", "lips_scale_Z_-", "lips_move_Z_+", "lips_move_Z_-", "lips_move_Y_+", "lips_move_Y_-",
+    "exp_anger", "exp_boring", "exp_cry", "exp_determination", "exp_disgust", "exp_doubt", "exp_effort1", "exp_effort3", "exp_fear3", "exp_sad1", "exp_sad2", "exp_sleep", "exp_stun", "exp_smile1", "exp_smile2", "exp_smile3", "exp_smile4", "exp_smile5", "exp_treaten", "exp_vocal", "exp_fff", "exp_airkiss", "exp_concentrating", "exp_devicios", "exp_sick", "exp_aim"
+  ]
+}
+

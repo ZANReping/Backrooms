@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://carijm8mx1rfg"
+
+[deps]
+
+files=["res://resources/translations/phone.zh_CN.translation", "res://resources/translations/phone.en.translation"]
+
+source_file="res://resources/translations/phone.csv"
+dest_files=["res://resources/translations/phone.zh_CN.translation", "res://resources/translations/phone.en.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

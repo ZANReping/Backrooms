@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemDefinition" load_steps=2 format=3]
+[ext_resource type="Script" path="res://core/items/item_definition.gd" id="1"]
+[resource]
+script = ExtResource("1")
+id = &"flashlight"
+display_name = "ITEM_FLASHLIGHT"
+description_key = &"ITEM_FLASHLIGHT_DESC"
+weight_kg = 0.3
+inventory_shape = Array[Vector2i]([Vector2i(0, 0), Vector2i(0, 1)])
+tags = Array[StringName]([&"tool", &"electronics"])
+equip_slot = &"primary_hand"
+use_action = &"flashlight"
+world_visual_fallback = &"flashlight"
+color = Color(0.18, 0.19, 0.2, 1)
+charge_capacity = 100.0
+initial_charge = 100.0
+world_size = Vector3(0.06, 0.22, 0.06)

@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="RouteCatalog" format=3]
+
+[ext_resource type="Script" path="res://core/world/route_definition.gd" id="1_enj2c"]
+[ext_resource type="Script" path="res://core/world/route_catalog.gd" id="2_kky0d"]
+
+[sub_resource type="Resource" id="Resource_j6nmw"]
+script = ExtResource("1_enj2c")
+id = &"prologue_apartment"
+scene_path = "res://levels/prologue/apartment.tscn"
+
+[sub_resource type="Resource" id="Resource_as553"]
+script = ExtResource("1_enj2c")
+id = &"prologue_commute"
+scene_path = "res://levels/prologue/commute.tscn"
+
+[sub_resource type="Resource" id="Resource_yf61d"]
+script = ExtResource("1_enj2c")
+id = &"level0_arrival"
+scene_path = "res://levels/prologue/arrival.tscn"
+time_scale = 24.0
+
+[sub_resource type="Resource" id="A"]
+script = ExtResource("1_enj2c")
+id = &"test_room_a"
+display_name = "ROOM_A"
+scene_path = "res://levels/test_rooms/test_room_a.tscn"
+
+[sub_resource type="Resource" id="B"]
+script = ExtResource("1_enj2c")
+id = &"test_room_b"
+display_name = "ROOM_B"
+scene_path = "res://levels/test_rooms/test_room_b.tscn"
+
+[resource]
+script = ExtResource("2_kky0d")
+routes = Array[ExtResource("1_enj2c")]([SubResource("Resource_j6nmw"), SubResource("Resource_as553"), SubResource("Resource_yf61d"), SubResource("A"), SubResource("B")])

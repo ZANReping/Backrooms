@@ -1,0 +1,58 @@
+﻿{
+    "schema":  1,
+    "id":  "wood_floor",
+    "name":  "Wood Floor",
+    "kind":  "texture",
+    "status":  "DOWNLOADED_UNVERIFIED",
+    "source_page":  "https://polyhaven.com/a/wood_floor",
+    "api_files":  "https://api.polyhaven.com/files/wood_floor",
+    "authors":  {
+                    "name":  "Dimitrios Savva",
+                    "role":  "All"
+                },
+    "published_utc":  "2023-10-24",
+    "retrieved_utc":  "2026-09-07",
+    "license":  "CC0 1.0 Universal",
+    "license_url":  "https://polyhaven.com/license",
+    "attribution_required":  false,
+    "maps":  {
+                 "color":  {
+                               "api_key":  "Diffuse",
+                               "resolution":  "2k",
+                               "format":  "jpg"
+                           },
+                 "normal":  {
+                                "api_key":  "nor_gl",
+                                "resolution":  "1k",
+                                "format":  "jpg"
+                            },
+                 "packed_arm":  {
+                                    "api_key":  "arm",
+                                    "resolution":  "1k",
+                                    "format":  "jpg"
+                                }
+             },
+    "files":  [
+                  {
+                      "path":  "assets/third_party/polyhaven/textures/wood_floor/wood_floor_diff_2k.jpg",
+                      "url":  "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_floor/wood_floor_diff_2k.jpg",
+                      "bytes":  2983667,
+                      "api_md5":  "d209b7416b022ed06093aef068c7fe23",
+                      "sha256":  "7c3ff1164c8dd0758ef2c048e9a266d28174120de01052ec40e6ca486177345c"
+                  },
+                  {
+                      "path":  "assets/third_party/polyhaven/textures/wood_floor/wood_floor_nor_gl_1k.jpg",
+                      "url":  "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_floor/wood_floor_nor_gl_1k.jpg",
+                      "bytes":  423303,
+                      "api_md5":  "620f174d2c09b579c5d02d37b2106668",
+                      "sha256":  "452247f0d0d1b7fc7f8324ff3b6ed60bcc6de1405f4284eeb8d9bce90d4939c2"
+                  },
+                  {
+                      "path":  "assets/third_party/polyhaven/textures/wood_floor/wood_floor_arm_1k.jpg",
+                      "url":  "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_floor/wood_floor_arm_1k.jpg",
+                      "bytes":  447855,
+                      "api_md5":  "02090ec0443778b85ba3df555236b755",
+                      "sha256":  "a84d9457fa35a76cf8a41da8bcef55387230c6b236819de878799585eda76059"
+                  }
+              ]
+}

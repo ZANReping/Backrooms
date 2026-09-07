@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="ItemDefinition" format=3]
+
+[ext_resource type="Script" path="res://core/items/item_description_rule.gd" id="1_yh88g"]
+[ext_resource type="Texture2D" path="res://assets/prologue/icons/phone.png" id="2_fi0n0"]
+[ext_resource type="Script" path="res://core/items/item_definition.gd" id="3_nx5hg"]
+[ext_resource type="PackedScene" path="res://art/prologue/props/phone.tscn" id="4_jlepm"]
+
+[resource]
+script = ExtResource("3_nx5hg")
+id = &"phone"
+display_name = "ITEM_PHONE"
+description_key = &"ITEM_PHONE_DESC"
+icon = ExtResource("2_fi0n0")
+world_scene = ExtResource("4_jlepm")
+weight_kg = 0.2
+inventory_shape = Array[Vector2i]([Vector2i(0, 0), Vector2i(0, 1)])
+tags = Array[StringName]([&"electronics", &"keepsake"])
+equip_slot = &"secondary_hand"
+use_action = &"phone"
+frontrooms_keepsake = true
+world_visual_fallback = &"phone"
+color = Color(0.08, 0.09, 0.1, 1)
+charge_capacity = 100.0
+initial_charge = 100.0
+world_size = Vector3(0.081, 0.146, 0.009)

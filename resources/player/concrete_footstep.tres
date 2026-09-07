@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AudioProfile" load_steps=2 format=3]
+[ext_resource type="Script" path="res://resources/player/audio_profile.gd" id="1"]
+[resource]
+script = ExtResource("1")
+surface_id = &"concrete"
+body_frequency_hz = 112.0
+noise_amount = 0.52
+decay = 5.2
+seed = 1701
+volume_db = -19.0
